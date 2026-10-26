@@ -11,6 +11,10 @@ Open data behind the CashHub e-invoicing reference (https://cashhubapp.com/en/e-
 
 Checked 2026-10-26. Every record carries its source. Rule text is ZATCA's own and stays in English as published.
 
+## Archived release
+
+[2026-10-26 dataset on Zenodo](https://doi.org/10.5281/zenodo.23677980)
+
 ## Licence
 
 CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Credit "CashHub e-invoicing reference" with a link. ZATCA's documents remain ZATCA's.
