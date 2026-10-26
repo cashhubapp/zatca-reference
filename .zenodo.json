@@ -1,0 +1,44 @@
+{
+ "title": "Saudi e-invoicing reference data: ZATCA business rules, glossary, integration waves and fines",
+ "upload_type": "dataset",
+ "description": "<p>Structured data behind the CashHub Saudi e-invoicing reference (https://cashhubapp.com/en/e-invoicing-reference), checked 2026-10-26.</p><ul><li>240 ZATCA business rules from SDK 238-R3.3.8 and the XML implementation standard, with official text, severity and location; 40 of them link to Arabic and English explanation pages.</li><li>37 e-invoicing terms with Arabic and English definitions.</li><li>Phase 2 integration waves 1 to 25: revenue thresholds, dates and announcement links.</li><li>The 18 offences in ZATCA's violations classification guide (2nd edition, May 2024) with the fine for each repeat, plus the November 2021 figures for comparison.</li></ul><p>Every record carries its source. Rule text is ZATCA's own. Not legal advice and not a ZATCA publication; the publisher, CashHub, sells a point-of-sale system in Saudi Arabia.</p>",
+ "creators": [
+  {
+   "name": "CashHub"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-by-4.0",
+ "publication_date": "2026-10-26",
+ "version": "2026-10-26",
+ "language": "eng",
+ "keywords": [
+  "ZATCA",
+  "e-invoicing",
+  "Fatoora",
+  "Saudi Arabia",
+  "VAT",
+  "UBL 2.1",
+  "business rules",
+  "tax penalties",
+  "الفوترة الإلكترونية",
+  "هيئة الزكاة والضريبة والجمارك"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://cashhubapp.com/en/e-invoicing-reference",
+   "relation": "isSupplementTo",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "https://cashhubapp.com/e-invoicing-reference",
+   "relation": "isSupplementTo",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "https://github.com/cashhubapp/zatca-reference",
+   "relation": "isIdenticalTo",
+   "resource_type": "dataset"
+  }
+ ]
+}

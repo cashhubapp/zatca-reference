@@ -1,0 +1,51 @@
+{
+  "name": "saudi-e-invoicing-reference",
+  "title": "Saudi e-invoicing reference data",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "version": "2026-10-26",
+  "resources": [
+    {
+      "name": "codes",
+      "path": "data/codes.json",
+      "format": "json",
+      "mediatype": "application/json"
+    },
+    {
+      "name": "glossary",
+      "path": "data/glossary.json",
+      "format": "json",
+      "mediatype": "application/json"
+    },
+    {
+      "name": "zatca-waves",
+      "path": "data/zatca-waves.json",
+      "format": "json",
+      "mediatype": "application/json"
+    },
+    {
+      "name": "penalties",
+      "path": "data/penalties.json",
+      "format": "json",
+      "mediatype": "application/json"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ZATCA E-Invoicing SDK 238-R3.3.8",
+      "path": "https://zatca.gov.sa/en/E-Invoicing/SystemsDevelopers/ComplianceEnablementToolbox/Pages/DownloadSDK.aspx"
+    },
+    {
+      "title": "ZATCA XML Implementation Standard",
+      "path": "https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/20230519_ZATCA_Electronic_Invoice_XML_Implementation_Standard_%20vF.pdf"
+    },
+    {
+      "title": "ZATCA violations classification guide (2nd edition, May 2024, Arabic)",
+      "path": "https://zatca.gov.sa/ar/E-Invoicing/Introduction/Guidelines/Documents/E-Invoice%20VAT.pdf"
+    }
+  ]
+}

@@ -1,0 +1,3212 @@
+{
+ "name": "ZATCA e-invoice business rule codes",
+ "publisher": "CashHub (cashhubapp.com)",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "checked": "2026-10-26",
+ "sdk": "238-R3.3.8",
+ "sources": {
+  "sdk": "https://zatca.gov.sa/en/E-Invoicing/SystemsDevelopers/ComplianceEnablementToolbox/Pages/DownloadSDK.aspx",
+  "xml_standard": "https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/20230519_ZATCA_Electronic_Invoice_XML_Implementation_Standard_%20vF.pdf"
+ },
+ "note": "text is the SDK's own message, copied as is; severity null means the rule is in the XML standard only",
+ "count": 240,
+ "codes": [
+  {
+   "id": "BR-02",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "An Invoice shall have an Invoice number (BT-1)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 35
+  },
+  {
+   "id": "BR-03",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have an Invoice issue date (BT-2)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 35
+  },
+  {
+   "id": "BR-04",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have an Invoice type code (BT-3)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-05",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have an Invoice currency code (BT-5)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-06",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "An Invoice shall contain the Seller name (BT-27)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-08",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "An Invoice shall contain the Seller postal address (BG-5)"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-09",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "The Seller postal address (BG-5) shall contain a Seller country code (BT-40)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-10",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "An Invoice shall contain the Buyer postal address (BG-8).Not applicable for simplified tax invoices and associated credit notes and debit notes (KSA-2, position 1 and 2 = 02)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-13",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "An Invoice shall have the Invoice total amount without VAT (BT-109)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-14",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have the Invoice total amount with VAT (BT-112)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-15",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have the Amount due for payment (BT-115)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-16",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "An Invoice shall have at least one Invoice line (BG-25)"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36,
+   "name_ar": "الفاتورة بدون أي بند",
+   "name_en": "Invoice has no line",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-16",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-16",
+   "example_verified": [
+    "BR-16",
+    "BR-CO-10",
+    "BR-CO-13",
+    "BR-S-08"
+   ]
+  },
+  {
+   "id": "BR-21",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-22",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-24",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-25",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Invoice line (BG-25) shall contain the Item name (BT-153)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 36
+  },
+  {
+   "id": "BR-26",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Invoice line (BG-25) shall contain the Item net price (BT-146)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-31",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Document level allowance (BG-20) shall have a Document level allowance amount (BT-92)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-32",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Document level allowance (BG-20) shall have a Document level allowance VAT category code (BT-95)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-36",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Document level charge (BG-21) shall have a Document level charge amount (BT-99)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-37",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Document level charge (BG-21) shall have a Document level charge VAT category code (BT-102)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-41",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-43",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-45",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each VAT breakdown (BG-23) shall have a VAT category taxable amount (BT-116)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-46",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each VAT breakdown (BG-23) shall have a VAT category tax amount (BT-117)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-47",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each VAT breakdown (BG-23) shall be defined through a VAT category code (BT-118)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-48",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each VAT breakdown (BG-23) shall have a VAT category rate (BT-119), except if the Invoice is not subject to VAT."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-49",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "A Payment instruction (BG-16) shall specify the Payment means type code (BT-81)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-52",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122)."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-53",
+   "family": "BR",
+   "severity": "warning",
+   "text": [
+    "If the VAT accounting currency code (BT-6) is present, then the Invoice total VAT amount in accounting currency (BT-111) shall be provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 37
+  },
+  {
+   "id": "BR-54",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Item attribute (BG-32) shall contain an Item attribute name (BT-160) and an Item attribute value (BT-161)."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-55",
+   "family": "BR",
+   "severity": "error",
+   "text": [
+    "Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.1 Business rules - integrity constraints (BR)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CL-01",
+   "family": "BR-CL",
+   "severity": "error",
+   "text": [
+    "The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 44
+  },
+  {
+   "id": "BR-CL-03",
+   "family": "BR-CL",
+   "severity": "error",
+   "text": [
+    "currencyID MUST be coded using ISO code list 4217 alpha-3"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 44
+  },
+  {
+   "id": "BR-CL-04",
+   "family": "BR-CL",
+   "severity": "error",
+   "text": [
+    "Invoice currency code MUST be coded using ISO code list 4217 alpha-3"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-CL-05",
+   "family": "BR-CL",
+   "severity": "error",
+   "text": [
+    "Tax currency code MUST be coded using ISO code list 4217 alpha-3"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-CL-14",
+   "family": "BR-CL",
+   "severity": "warning",
+   "text": [
+    "Country codes in an invoice MUST be coded using ISO code list 3166-1"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-CL-16",
+   "family": "BR-CL",
+   "severity": "warning",
+   "text": [
+    "Payment means in an invoice MUST be coded using UNCL4461 code list"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-CL-18",
+   "family": "BR-CL",
+   "severity": "error",
+   "text": [
+    "Invoice tax categories MUST be coded using UNCL5305 code list."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.7 Business rules – Code lists (BR-CL)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-CL-KSA-14",
+   "family": "BR-CL-KSA",
+   "severity": "error",
+   "text": [
+    "[KSA-14]Field character limit for QR Code field has been exceeded. The maximum character limit for this field is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-CO-04",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-10",
+   "family": "BR-CO",
+   "severity": "warning",
+   "text": [
+    "Sum of Invoice line net amount (BT-106) = Σ Invoice line net amount (BT-131)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-11",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "Sum of allowances on document level (BT-107) = Σ Document level allowance amount (BT-92)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-12",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "Sum of charges on document level (BT-108) = Σ Document level charge amount (BT-99)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-13",
+   "family": "BR-CO",
+   "severity": "warning",
+   "text": [
+    "Invoice total amount without VAT (BT-109) = Σ Invoice line net amount (BT-131) - Sum of allowances on document level (BT-107) + Sum of charges on document level (BT-108)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-14",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38,
+   "name_ar": "إجمالي الضريبة لا يساوي مجموع ضرائب الفئات",
+   "name_en": "Total VAT does not equal the sum of category VAT",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-co-14",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-co-14",
+   "example_verified": [
+    "BR-CO-14"
+   ]
+  },
+  {
+   "id": "BR-CO-15",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "Invoice total amount with VAT (BT-112) = Invoice total amount without VAT (BT-109) + Invoice total VAT amount (BT-110)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38,
+   "name_ar": "الإجمالي شامل الضريبة لا يساوي الصافي + الضريبة",
+   "name_en": "Total with VAT does not equal net total + VAT",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-co-15",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-co-15",
+   "example_verified": [
+    "BR-CO-15",
+    "BR-CO-16"
+   ]
+  },
+  {
+   "id": "BR-CO-16",
+   "family": "BR-CO",
+   "severity": "warning",
+   "text": [
+    "Amount due for payment (BT-115) = Invoice total amount with VAT (BT-112) -Pre-Paid amount (BT-113) + Rounding amount (BT-114)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 38
+  },
+  {
+   "id": "BR-CO-17",
+   "family": "BR-CO",
+   "severity": "warning",
+   "text": [
+    "VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to two decimals."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 39,
+   "name_ar": "ضريبة الفئة لا تساوي المبلغ × النسبة",
+   "name_en": "Category VAT does not equal amount × rate",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-co-17",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-co-17",
+   "example_verified": [
+    "BR-CO-14",
+    "BR-CO-15",
+    "BR-CO-17",
+    "BR-Z-09"
+   ]
+  },
+  {
+   "id": "BR-CO-18",
+   "family": "BR-CO",
+   "severity": "error",
+   "text": [
+    "An Invoice shall at least have one VAT breakdown group (BG-23)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.2 Business rules – conditions (BR-CO)",
+   "pdf_page": 39
+  },
+  {
+   "id": "BR-CUSTOM-VALIDATION-01",
+   "family": "BR-CUSTOM",
+   "severity": "error",
+   "text": [
+    "The Seller VAT registration number or seller group VAT registration number (BT-31) of The invoice must not match the buyer VAT registration number (BT-48) ."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-DEC-01",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Document level allowance amount (BT-92) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-DEC-02",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Document level allowance base amount (BT-93) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 45
+  },
+  {
+   "id": "BR-DEC-05",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Document level charge amount (BT-99) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-06",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Document level charge base amount (BT-100) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-09",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Sum of Invoice line net amount (BT-106) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-10",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Sum of allowanced on document level (BT-107) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-11",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Sum of charges on document level (BT-108) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-12",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice total amount without VAT (BT-109) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-13",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice total VAT amount (BT-110) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-14",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice total amount with VAT (BT-112) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-15",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice total VAT amount in accounting currency (BT-111) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-16",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Pre-Paid amount (BT-113) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-17",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Rounding amount (BT-114) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-18",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-19",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 46
+  },
+  {
+   "id": "BR-DEC-20",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-DEC-23",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-DEC-24",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice line allowance amount (BT-136) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-DEC-25",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice line allowance base amount (BT-137) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-DEC-27",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-DEC-28",
+   "family": "BR-DEC",
+   "severity": "warning",
+   "text": [
+    "The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.8 Business rules – Decimals (BR-DEC)",
+   "pdf_page": 47
+  },
+  {
+   "id": "BR-E-01",
+   "family": "BR-E",
+   "severity": "warning",
+   "text": [
+    "An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151 or BT-95 or BT-102) is \"Exempt from VAT\" shall contain at least one VAT breakdown (BG-23) with the VAT category code (BT-118) equal to \"Exempt from VAT\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 41
+  },
+  {
+   "id": "BR-E-05",
+   "family": "BR-E",
+   "severity": "error",
+   "text": [
+    "In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is \"Exempt from VAT\", the Invoiced item VAT rate (BT-152) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 41
+  },
+  {
+   "id": "BR-E-06",
+   "family": "BR-E",
+   "severity": "error",
+   "text": [
+    "In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is \"Exempt from VAT\", the Document level allowance VAT rate (BT-96) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 42
+  },
+  {
+   "id": "BR-E-07",
+   "family": "BR-E",
+   "severity": "error",
+   "text": [
+    "In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is \"Exempt from VAT\", the Document level charge VAT rate (BT-103) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 42
+  },
+  {
+   "id": "BR-E-08",
+   "family": "BR-E",
+   "severity": "warning",
+   "text": [
+    "In a VAT breakdown (BG-23) where the VAT category code (BT-118) is \" Exempt from VAT\" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are \"Exempt from VAT\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 42
+  },
+  {
+   "id": "BR-E-09",
+   "family": "BR-E",
+   "severity": "error",
+   "text": [
+    "The VAT category tax amount (BT-117) In a VAT breakdown (BG-23) where the VAT category code (BT-118) equals \"Exempt from VAT\" shall equal 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.5 Business rules - Exempted from VAT (BR-E)",
+   "pdf_page": 42
+  },
+  {
+   "id": "BR-KSA-03",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice must contain a unique identifier (\"UUID\") (KSA-1) given by the unit that issued the document (unique message identifier for interchange process). This value must contain only letters, digits, and dashes."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 47,
+   "name_ar": "المعرّف الفريد للفاتورة (UUID) ناقص",
+   "name_en": "Invoice unique identifier (UUID) is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-03",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-03",
+   "example_verified": [
+    "BR-KSA-03"
+   ]
+  },
+  {
+   "id": "BR-KSA-04",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The document issue date (BT-2) must be less or equal to the current date."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 47,
+   "name_ar": "تاريخ الفاتورة بعد تاريخ اليوم",
+   "name_en": "Issue date is later than today",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-04",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-04",
+   "example_verified": [
+    "BR-KSA-04"
+   ]
+  },
+  {
+   "id": "BR-KSA-05",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice type code (BT-3) must be equal to one of value from the subset of UN/CEFACT code list 1001, D.16B agreed for KSA electronic invoices. Please refer paragraph 11.2.1 of XML implementation Standards."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 48,
+   "name_ar": "رمز نوع الفاتورة غير مسموح",
+   "name_en": "Invoice type code is not allowed",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-05",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-05",
+   "example_verified": [
+    "BR-KSA-05"
+   ]
+  },
+  {
+   "id": "BR-KSA-06",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice transaction code (KSA-2) must exist and respect the following structure: NNPNESB where NN (positions 1 and 2) = invoice subtype: - 01 for tax invoice - 02 for simplified tax invoice P (position 3) = 3rd Party invoice transaction, 0 for false, 1 for true N (position 4) = Nominal invoice transaction, 0 for false, 1 for true E (position 5) = Exports invoice transaction, 0 for false, 1 for true S (position 6) = Summary invoice transaction, 0 for false, 1 for true B (position 7) = Self billed invoice"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 48,
+   "name_ar": "رمز المعاملة (KSA-2) غير مكتمل",
+   "name_en": "Transaction code (KSA-2) is incomplete",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-06",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-06",
+   "example_verified": [
+    "BR-KSA-06",
+    "BR-KSA-31"
+   ]
+  },
+  {
+   "id": "BR-KSA-07",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "Self billing is not allowed (KSA-2, position 7 cannot be \"1\") for export invoices (KSA-2, position 5 = 1)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 48
+  },
+  {
+   "id": "BR-KSA-08",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The seller identification (BT-29) must exist only once with one of the scheme ID (BT-29-1) (CRN, MOM, MLS, SAG, OTH, 700) and must contain only alphanumeric characters. Commercial Registration number with \"CRN\" as schemeID. MOMRAH license with \"MOM\" as schemeID. MHRSD license with \"MLS\" as schemeID. 700 Number with \"700\" as schemeID. MISA license with \"SAG\" as schemeID. Other OD with \"OTH\" as schemeID. In case of multiple commercial registrations, the seller should fill the commercial registration of the branch in respect of which the Tax Invoice is being issued. In case multiple IDs exist then one of the above must be entered following the sequence specified above."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 48,
+   "name_ar": "معرّف البائع أو نوعه غير صحيح",
+   "name_en": "Seller identifier or its type is wrong",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-08",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-08",
+   "example_verified": [
+    "BR-KSA-08"
+   ]
+  },
+  {
+   "id": "BR-KSA-09",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Seller address must contain street name (BT-35), building number (KSA-17), postal code (BT-38), city (BT-37), district (KSA-3), country code (BT-40). For more information please access this link: https://splonline.com.sa/en/national-address-1/"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 49,
+   "name_ar": "عنوان البائع ناقص",
+   "name_en": "Seller address is incomplete",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-09",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-09",
+   "example_verified": [
+    "BR-KSA-09"
+   ]
+  },
+  {
+   "id": "BR-KSA-10",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Buyer address must contain a street (BT-50), city (BT-52), country code (BT-55). This rule does not apply on the simplified tax invoices and associated credit notes and debit notes (KSA-2, position 1 and 2 = 02)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 50
+  },
+  {
+   "id": "BR-KSA-11",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "An Invoice line (BG-25) where the VAT category code (BT-151) is \"Not subject to VAT\", an invoiced item VAT rate (BT-152) shall be 0 (zero), if exist."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 50
+  },
+  {
+   "id": "BR-KSA-12",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A Document level allowance (BG-20) where VAT category code (BT-95) is \"Not subject to VAT\", a Document level allowance VAT rate (BT-96) shall be 0 (Zero), if exist."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 50
+  },
+  {
+   "id": "BR-KSA-13",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A Document level charge (BG-21) where the VAT category code (BT-102) is \"Not subject to VAT\", a Document level charge VAT rate (BT-103) shall be 0 (zero), if exist."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 50
+  },
+  {
+   "id": "BR-KSA-14",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The buyer identification (BT-46), required only if buyer is not VAT registered, then the buyer identification (BT-46) must be provided with one of the scheme IDs (BT-46-1) (TIN, CRN, MOM, MLS, 700, SAG, NAT, GCC, IQA, OTH) and must contain only alphanumeric characters. Tax Identification Number \"TIN\" as schemeID ;Commercial registration number with \"CRN\" as schemeID ;MOMRAH license with \"MOM\" as schemeID ;MHRSD license with \"MLS\" as schemeID ;700 Number with \"700\" as schemeID ;MISA license with \"SAG\" as schemeID ;National ID with \"NAT\" as schemeID ;GCC ID with \"GCC\" as schemeID ;Iqama Number with \"IQA\" as schemeID ;Passport ID with \"PAS\" as schemeID ;Other ID with \"OTH\" as schemeID. ;In case of multiple commercial registrations, the seller should fill the commercial registration of the branch in respect of which the Tax Invoice is being issued. In case multiple IDs exist then one of the above must be entered following the sequence specified above"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 50
+  },
+  {
+   "id": "BR-KSA-15",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The tax invoice ((invoice type code (BT-30) = 388) and (invoice transaction code (KSA-2) has \"01\" as first 2 digits)) must contain the supply date (KSA-5)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52
+  },
+  {
+   "id": "BR-KSA-16",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Payment means code (BT-81) in an invoice exist, then it must contain one of the values from subset of UNTDID 4461 code list"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52,
+   "name_ar": "رمز طريقة الدفع غير معروف",
+   "name_en": "Payment means code is not recognised",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-16",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-16",
+   "example_verified": [
+    "BR-CL-16",
+    "BR-KSA-16"
+   ]
+  },
+  {
+   "id": "BR-KSA-17",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "Debit and credit note (invoice type code (BT-3) is equal to 383 or 381) must contain the reason (KSA-10) for this invoice type issuing."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52,
+   "name_ar": "سبب إشعار الدائن أو المدين ناقص",
+   "name_en": "Credit or debit note reason is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-17",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-17",
+   "example_verified": [
+    "BR-KSA-17"
+   ]
+  },
+  {
+   "id": "BR-KSA-18",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "VAT category code must contain one of the values (S, Z, E, O)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52,
+   "name_ar": "فئة الضريبة ليست S أو Z أو E أو O",
+   "name_en": "VAT category is not S, Z, E or O",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-18",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-18",
+   "example_verified": [
+    "BR-CL-18",
+    "BR-KSA-18",
+    "BR-S-08"
+   ]
+  },
+  {
+   "id": "BR-KSA-19",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Each Document level charge (BG-21) shall have a code for the reason for document level charge (BT-105)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52
+  },
+  {
+   "id": "BR-KSA-20",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Each Invoice line charge (BG-28) shall have a code for the reason for invoice line charge (BT-145)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52
+  },
+  {
+   "id": "BR-KSA-21",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Each Document level charge (BG-21) shall have a Reason for document level charge (BT-104)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 52
+  },
+  {
+   "id": "BR-KSA-22",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Each Invoice line charge (BG-28) shall have a Reason for invoice line charge (BT-144)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 53
+  },
+  {
+   "id": "BR-KSA-23",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A VAT breakdown (BG-23) with VAT Category code (BT-118) 'Exempt from VAT' shall have a VAT exemption reason code (BT-121)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 53
+  },
+  {
+   "id": "BR-KSA-24",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A VAT breakdown (BG-23) with VAT Category code (BT-118) 'Not subject to VAT' shall have a VAT exception reason code (BT-121)"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 53
+  },
+  {
+   "id": "BR-KSA-25",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If it is a simplified tax invoice or an associated credit note or a debit note (KSA-2, position 1 and 2 = 02) and the tax exemption reason code (BT-121) is equal with VATEX-SA-EDU or VATEX-SA-HEA, then buyer name (BT-44) is mandatory."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 53
+  },
+  {
+   "id": "BR-KSA-26",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the invoice contains the previous invoice hash (KSA-13), this hash must be base64 encoded SHA256. The hash shall be computed using the following method as described in the ds:transforms block in the XML Invoice Specifications: 1. Remove the <Invoice><ext:UBLExtensions/> block 2. Remove the <Invoice><cac:AdditionalDocumentReference/> block where <cbc:ID/> = QR 3. Remove the <Invoice><cac:Signature/> block 4. Canonicalize the Invoice using the C14N11 standard 5. Hash the resulting string using SHA256 to a binary object 6. Base64 encode the binary object to generate the digest value For the first invoice, the previous invoice hash is \"NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==\", the equivalent for base64 encoded SHA256 of \"0\" (zero) character."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 53,
+   "name_ar": "تجزئة الفاتورة السابقة (PIH) بصيغة غير صحيحة",
+   "name_en": "Previous invoice hash (PIH) is in the wrong form",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-26",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-26",
+   "example_verified": [
+    "BR-KSA-26",
+    "BR-KSA-61",
+    "BR-KSA-CL-03"
+   ]
+  },
+  {
+   "id": "BR-KSA-27",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The document must contain a QR code (KSA-14), and this code must be base64Binary."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 54,
+   "name_ar": "رمز QR ناقص من الفاتورة",
+   "name_en": "QR code is missing from the invoice",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-27",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-27",
+   "example_verified": [
+    "BR-CL-KSA-14",
+    "BR-KSA-27",
+    "BR-KSA-28",
+    "BR-KSA-30"
+   ]
+  },
+  {
+   "id": "BR-KSA-28",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "If the cryptographic stamp (KSA-15) exists in the invoice, this cryptographic stamp (KSA-15) must contain the exact \"urn:oasis:names:specification:ubl:signature:1\" value for signature information ID."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 55
+  },
+  {
+   "id": "BR-KSA-29",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the cryptographic stamp (KSA-15) exists in the invoice, this cryptographic stamp (KSA-15) must contain the exact \"urn:oasis:names:specification:ubl:signature:Invoice\" value for referenced signature ID and signature ID."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 55
+  },
+  {
+   "id": "BR-KSA-30",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The document cryptographic stamp (KSA-15) must contain the exact \"urn:oasis:names:specification:ubl:dsig:enveloped:xades\" value for signature method."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 55
+  },
+  {
+   "id": "BR-KSA-31",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "For simplified tax invoices and associated credit notes and debit notes (KSA-2, position 1 and 2 = 02),only the following transaction types can be \"true\": - third party (KSA-2, position 3 = 1), - nominal supply (KSA-2, position 4 = 1) and - summary transactions (KSA-2,position 6 = 1). Other transaction types (self-billing and export) are not allowed to be \"true\" for simplified tax invoices and associated credit notes and debit notes."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 55
+  },
+  {
+   "id": "BR-KSA-33",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "Each invoice must have an invoice counter value (KSA-16)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 55,
+   "name_ar": "عدّاد الفاتورة (ICV) ناقص",
+   "name_en": "Invoice counter (ICV) is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-33",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-33",
+   "example_verified": [
+    "BR-KSA-33"
+   ]
+  },
+  {
+   "id": "BR-KSA-34",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice counter value (KSA-16) contains only digits."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "عدّاد الفاتورة (ICV) فيه غير الأرقام",
+   "name_en": "Invoice counter (ICV) holds more than digits",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-34",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-34",
+   "example_verified": [
+    "BR-KSA-34"
+   ]
+  },
+  {
+   "id": "BR-KSA-35",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the invoice contains a supply end date (KSA-24), then the invoice must contain a supply date (KSA-5)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56
+  },
+  {
+   "id": "BR-KSA-36",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the invoice contains a supply end date (KSA-24), then this date must be greater than or equal to the supply date (KSA-5)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56
+  },
+  {
+   "id": "BR-KSA-37",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The seller address building number must contain 4 digits."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "رقم مبنى البائع ليس 4 أرقام",
+   "name_en": "Seller building number is not 4 digits",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-37",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-37",
+   "example_verified": [
+    "BR-KSA-37"
+   ]
+  },
+  {
+   "id": "BR-KSA-39",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice must contain the seller VAT registration number or seller group VAT registration number (BT-31)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "الرقم الضريبي للبائع ناقص",
+   "name_en": "Seller VAT number is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-39",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-39",
+   "example_verified": [
+    "BR-KSA-39",
+    "BR-KSA-40"
+   ]
+  },
+  {
+   "id": "BR-KSA-40",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "If it exists in the invoice, the seller VAT registration number (BT-31) must contain 15 digits. The first and the last digits are \"3\".."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "الرقم الضريبي للبائع ليس 15 رقمًا يبدأ وينتهي بـ 3",
+   "name_en": "Seller VAT number is not 15 digits starting and ending with 3",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-40",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-40",
+   "example_verified": [
+    "BR-KSA-40"
+   ]
+  },
+  {
+   "id": "BR-KSA-42",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The buyer name (BT-44) must be present in the tax invoice and associated credit notes and debit notes (KSA-2, position 1 and 2 = 01)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "اسم المشتري ناقص في الفاتورة الضريبية",
+   "name_en": "Buyer name is missing on a tax invoice",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-42",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-42",
+   "example_verified": [
+    "BR-KSA-15",
+    "BR-KSA-42",
+    "BR-KSA-F-06-C12"
+   ]
+  },
+  {
+   "id": "BR-KSA-44",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "If it exists in the invoice,the buyer VAT registration number or buyer group VAT registration number (BT-48) must contain 15 digits. The first digit and the last digit is \"3\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 56,
+   "name_ar": "الرقم الضريبي للمشتري غير صحيح",
+   "name_en": "Buyer VAT number is invalid",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-44",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-44",
+   "example_verified": [
+    "BR-KSA-44"
+   ]
+  },
+  {
+   "id": "BR-KSA-46",
+   "family": "BR-KSA",
+   "severity": null,
+   "text": [
+    "If it is an export invoice (KSA-2, position 5 is true), the buyer VAT registration number or buyer group VAT registration number (BT-48) must not exist in the invoice."
+   ],
+   "in_sdk": false,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57
+  },
+  {
+   "id": "BR-KSA-49",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "If the tax exemption reason code (BT-121) is equal to VATEX-SA-EDU or VATEX-SA-HEA, then the other buyer ID (BT-46) is mandatory and must be national ID (BT-46-1 = NAT)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57
+  },
+  {
+   "id": "BR-KSA-51",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The line amount with VAT (KSA-12) must be Invoice line net amount (BT-131) + Line VAT amount (KSA-11)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57
+  },
+  {
+   "id": "BR-KSA-52",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The line VAT amount (KSA-11) is mandatory for tax invoice and associated credit notes and debit notes (KSA-2, position 1 and 2 = 01)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57
+  },
+  {
+   "id": "BR-KSA-53",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The line amount with VAT (KSA-12) is mandatory for tax invoice and associated credit notes and debit notes (KSA-2, position 1 and 2 = 01)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57
+  },
+  {
+   "id": "BR-KSA-56",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "For credit notes ((BT-3) has the value of 381) and debit notes ((BT-3) has the value of 383), the billing reference ID (BT-25) is mandatory."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57,
+   "name_ar": "إشعار الدائن أو المدين بدون رقم الفاتورة الأصلية",
+   "name_en": "Credit or debit note without the original invoice number",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-56",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-56",
+   "example_verified": [
+    "BR-55",
+    "BR-KSA-56",
+    "BR-KSA-F-06-C22"
+   ]
+  },
+  {
+   "id": "BR-KSA-60",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Cryptographic stamp (KSA-15) must exist in simplified tax invoices and associated credit notes and debit notes (KSA-2, position 1 and 2 = 02)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 57,
+   "name_ar": "الختم التشفيري ناقص من الفاتورة المبسطة",
+   "name_en": "Cryptographic stamp is missing from a simplified invoice",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-60",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-60",
+   "example_verified": [
+    "BR-KSA-29",
+    "BR-KSA-30",
+    "BR-KSA-60"
+   ]
+  },
+  {
+   "id": "BR-KSA-61",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Previous invoice hash (KSA-13) must exist in an invoice."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "تجزئة الفاتورة السابقة (PIH) ناقصة",
+   "name_en": "Previous invoice hash (PIH) is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-61",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-61",
+   "example_verified": [
+    "BR-KSA-61"
+   ]
+  },
+  {
+   "id": "BR-KSA-63",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the buyer country code (BT-55) is \"SA\", then these fields are mandatory:street name (BT-50), building number (KSA-18), postal code (BT-53), city (BT-52), District (KSA-4), country code (BT-55).For more information please access this link:https://splonline.com.sa/en/national-address-1/"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "عنوان المشتري السعودي ناقص",
+   "name_en": "Saudi buyer address is incomplete",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-63",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-63",
+   "example_verified": [
+    "BR-KSA-15",
+    "BR-KSA-63",
+    "BR-KSA-F-06-C28"
+   ]
+  },
+  {
+   "id": "BR-KSA-66",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Seller postal code (BT-38) must be 5 digits."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "الرمز البريدي للبائع ليس 5 أرقام",
+   "name_en": "Seller postal code is not 5 digits",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-66",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-66",
+   "example_verified": [
+    "BR-KSA-66"
+   ]
+  },
+  {
+   "id": "BR-KSA-67",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the buyer country code (BT-55) is \"SA\", then the Buyer postal code(BT-53) must be 5 digits."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "الرمز البريدي للمشتري السعودي ليس 5 أرقام",
+   "name_en": "Saudi buyer postal code is not 5 digits",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-67",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-67",
+   "example_verified": [
+    "BR-KSA-15",
+    "BR-KSA-67"
+   ]
+  },
+  {
+   "id": "BR-KSA-68",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "Tax currency code (BT-6) must exist in an invoice."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "عملة الضريبة ناقصة",
+   "name_en": "Tax currency code is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-68",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-68",
+   "example_verified": [
+    "BR-KSA-68"
+   ]
+  },
+  {
+   "id": "BR-KSA-69",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A VAT breakdown (BG-23) with VAT Category code (BT-118) 'Zero rated' shall have a VAT exception reason code (BT-121)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "رمز سبب نسبة الصفر أو الإعفاء ناقص",
+   "name_en": "Zero-rate or exemption reason code is missing",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-69",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-69",
+   "example_verified": [
+    "BR-KSA-69"
+   ]
+  },
+  {
+   "id": "BR-KSA-70",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The invoice must contain Invoice Issue Time (KSA-25). This value should be in the format: hh:mm:ss for time expressed in local time (eg 19:20:30) or hh:mm:ssZ for time expressed in UTC (eg 19:20:30Z).\"The invoice must contain Invoice Issue Time (KSA-25). This value should be in the format: hh:mm:ss for time expressed in local time (eg 19:20:30) or hh:mm:ssZ for time expressed in UTC (eg 19:20:30Z)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 58,
+   "name_ar": "وقت إصدار الفاتورة بصيغة غير مقبولة",
+   "name_en": "Issue time is in a format that is not accepted",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-70",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-70",
+   "example_verified": [
+    "BR-KSA-70"
+   ]
+  },
+  {
+   "id": "BR-KSA-71",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the Invoice is a simplified invoice type and is a summary invoice (KSA-2, position 1 and 2 = 02, position 6 = 1),then the buyer name must be present."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 59
+  },
+  {
+   "id": "BR-KSA-72",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "If the Invoice is a simplified invoice type and is a summary invoice (KSA-2, position 1 and 2 = 02, position 6 = 1), then a supply date (KSA-5) and supply end date (KSA-24) must be present"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 59
+  },
+  {
+   "id": "BR-KSA-73",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If Pre-Paid amount (BT-113) is provided, then the following data is mandatory to provide as additional invoice line(s) -Prepayment ID (KSA-26) -Sequential invoice number (BT-1) of the prepayment invoice(s)-Prepayment Issue Date (KSA-28) -Issue date (BT-2) of the prepayment invoice(s) Prepayment Issue Time (KSA-29) - Issue time (KSA-25) of the prepayment invoice(s) Prepayment Document Type Code (KSA-30)- Invoice type code (BT-3) must be 386.",
+    "If Pre-Paid amount (BT-113) is provided, then the following data is mandatory to provide as additional invoice line(s) -Prepayment ID (KSA-26) -Sequential invoice number (BT-1) of the prepayment invoice(s)-Prepayment Issue Date (KSA-28) -Issue date (BT-2) of the prepayment invoice(s) Prepayment Issue Time (KSA-29) - Issue time (KSA-25) of the prepayment invoice(s) Prepayment Document Type Code (KSA-30)- Invoice type code (BT-3) must be 386"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 59
+  },
+  {
+   "id": "BR-KSA-74",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "Prepayment Document Type Code (KSA-30) for the Invoice line document reference must be '386'."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 59
+  },
+  {
+   "id": "BR-KSA-75",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If Prepayment Document Type code (KSA-30) is provided in an Invoice Line, then the following data is mandatory to provide in that invoice line - Prepayment VAT category Taxable Amount (KSA-31) - Sum total of taxable amounts subject to specific VAT Category code of the prepayment invoice(s); Prepayment VAT Category Tax Amount (KSA-32) - Sum total of tax amounts subject to specific VAT Category code of the prepayment invoice(s); Prepayment VAT category code (KSA-33) - the VAT category code of the associated Prepayment invoice(s); Prepayment VAT rate (KSA-34) - VAT rate of the specific VAT Category code of the prepayment invoice(s)"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 59
+  },
+  {
+   "id": "BR-KSA-76",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \"Zero rated\" the Prepayment VAT rate (KSA-34) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 60
+  },
+  {
+   "id": "BR-KSA-77",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \"Exempt from VAT\" the Prepayment VAT rate (KSA-34) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 60
+  },
+  {
+   "id": "BR-KSA-78",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \"Not subject to VAT\" the Prepayment VAT rate (KSA-34) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 61
+  },
+  {
+   "id": "BR-KSA-79",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The Prepayment VAT Category Tax Amount (KSA-32) must be Prepayment VAT category Taxable Amount( (KSA-31) x Prepayment VAT rate (KSA-34) /100)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 61
+  },
+  {
+   "id": "BR-KSA-80",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The Pre-Paid amount (BT-113) must be equal to the sum total of the Prepayment VAT category Taxable Amount (KSA-31) and the Prepayment VAT Category Tax Amount (KSA-32)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 61
+  },
+  {
+   "id": "BR-KSA-81",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The other Buyer ID (BT-46) must present in the tax invoice and associated debit notes and credit notes (KSA-2, position 1 and 2 = 01), where the buyer VAT registration number or buyer group VAT registration number (BT-48) is not provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 61
+  },
+  {
+   "id": "BR-KSA-82",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "An Invoice line (BG-25) where Prepayment Document Type Code (KSA-30) is provided, then Item net price (BT-146); Invoice line allowance amount (BT-136); Invoice line charge amount (BT-141); Item line net amount (BT-131); line VAT amount (KSA-11); and line amount with VAT (KSA-12) for that line shall be 0 (Zero), if exist."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 61
+  },
+  {
+   "id": "BR-KSA-83",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "A VAT breakdown (BG-23) with VAT Category code (BT-118) 'Exempt from VAT' or 'Zero rated' or 'Not subject to VAT' shall have a VAT exemption (or exception) reason text (BT-120) with one of the values from paragraph 11.2.4 of XML implementation standards on Tax exemption (or exception) reason text - specific to Saudi Arabia."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.1 KSA - business rules (BR-KSA)",
+   "pdf_page": 62
+  },
+  {
+   "id": "BR-KSA-84",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "The Document level allowance VAT rate (BT-96), Document level Charge VAT rate (BT-103), VAT category rate(BT-119), Invoiced item VAT rate (BT-152), Prepayment VAT rate(KSA-34) must be limited to one of the following values (5 or 15) when the relevant Document level allowance VAT category code (BT-95), Document level Charge VAT category code(BT-102), VAT category code(BT-118), Invoiced item VAT category code(BT-151), Prepayment VAT Category Code (KSA-33) is \"S\"- \"Standard rated\". In other words, for Standard Rate VAT Category the rate can either be 15% or 5%."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null,
+   "name_ar": "نسبة الضريبة للفئة S ليست 15 أو 5",
+   "name_en": "Standard-rate VAT is not 15 or 5",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-84",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-84",
+   "example_verified": [
+    "BR-CO-17",
+    "BR-KSA-84",
+    "BR-S-09"
+   ]
+  },
+  {
+   "id": "BR-KSA-85",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "The Buyer's contact phone number (BT-57) shall start with \"0\" or \"+\", followed by a maximum of 15 number and minimum 4 character after the \"+\" or \"0\" , if exist."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-86",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "Buyer's Contact Email Address (BT-58) shall follow the following format ** XXX@YYY.ZZ where: The [XXX] should consist of alphanumeric characters (a-z, A-Z, 0-9), dots ('.'), underscores ('_'), or hyphens ('-'). It must start and end with an alphanumeric character. The [YYY] should consist of alphanumeric characters (a-z, A-Z, 0-9), hyphens ('-'), and dots ('.'). It must start and end with an alphanumeric character. The [ZZ] should be a valid extension with a maximum 3 and a minimum 2 alphabets (a-z, A-Z), If exist. Multiple emails can be provided using semicolon ';' separator."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-87",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "[BR-KSA-87] If the tax exchange rate (KSA-36) exists, then Source Currency Code (KSA-37), Target Currency Code (KSA-38) and Calculation Rate (KSA-39) shall be provided"
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-88",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "[BR-KSA-88] If exist, Source Currency Code (KSA-37) must be the same as Invoice currency code (BT-5)"
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-89",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "[BR-KSA-89] If exists, Target Currency Code (KSA-38) must be the same as the Tax currency code (BT-6)"
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-90",
+   "family": "BR-KSA",
+   "severity": "error",
+   "text": [
+    "[BR-KSA-90] If exists, the allowed maximum number of digits for the Tax Exchange Rate (KSA-39) is 14."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-91",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "For B2G supplies attracting provisions of Article 20(5) of VAT Regulations, Company Legal Form (KSA-40) should be provided with a static value \"GOV\" in case of a tax invoice and associated credit notes and debit notes (KSA-2, position 1 and 2 = 01)."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-92",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "If the Company Legal Form (KSA-40) is provided as 'GOV', then the Tax Point Date (BT-7) must present in a tax invoice and associated credit notes and debit notes (KSA-2, position 1 and 2 = 01) and it must refer to the Payment Order Date."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-93",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \"Zero-rated\" the Prepayment VAT exception reason code (KSA-41) should be provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-94",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \" Exempt from VAT \" the Prepayment VAT exemption reason code (KSA-41) should be provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-95",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) where the Prepayment VAT category code (KSA-33) is \" Not subject to VAT \" the Prepayment VAT exception reason code (KSA-41) should be provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-96",
+   "family": "BR-KSA",
+   "severity": "warning",
+   "text": [
+    "An Invoice line (BG-25) with the Prepayment VAT category code (KSA-33) 'Exempt from VAT' or 'Zero rated' or 'Not subject to VAT' shall have a Prepayment VAT exemption(or exception) reason text (KSA-42) with one of the values from paragraph 11.2.4 of XML implementation standards on Tax exemption (or exception) reason text - specific to Saudi Arabia."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-CL-01",
+   "family": "BR-KSA-CL",
+   "severity": "error",
+   "text": [
+    "Currency code (BT-5) must be according to ISO 4217:2005"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.3 KSA – code list (BR-KSA-CL)",
+   "pdf_page": 63
+  },
+  {
+   "id": "BR-KSA-CL-02",
+   "family": "BR-KSA-CL",
+   "severity": "error",
+   "text": [
+    "All currencyID attributes (BT-5) must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.3 KSA – code list (BR-KSA-CL)",
+   "pdf_page": 64
+  },
+  {
+   "id": "BR-KSA-CL-03",
+   "family": "BR-KSA-CL",
+   "severity": "error",
+   "text": [
+    "Mime code must be according to subset of IANA code list."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.3 KSA – code list (BR-KSA-CL)",
+   "pdf_page": 65
+  },
+  {
+   "id": "BR-KSA-CL-04",
+   "family": "BR-KSA-CL",
+   "severity": "warning",
+   "text": [
+    "If VAT category Code (BT-118) is 'Z', or 'E', VAT exemption (or exception) reason code (BT-121) must exist with one of the values from paragraph 11.2.4 of XML implementation standards on Tax exemption (or exception) reason code - specific to Saudi Arabia."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.3 KSA – code list (BR-KSA-CL)",
+   "pdf_page": 65,
+   "name_ar": "رمز سبب الصفر أو الإعفاء لا يناسب الفئة",
+   "name_en": "Zero-rate or exemption reason code does not fit the category",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-cl-04",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-cl-04",
+   "example_verified": [
+    "BR-KSA-CL-04"
+   ]
+  },
+  {
+   "id": "BR-KSA-CL-06",
+   "family": "BR-KSA-CL",
+   "severity": "warning",
+   "text": [
+    "Code for the reason for document level charge (BT-105) and the code for the reason for invoice line charge (BT-145) MUST be coded using UNTDID 7161 code list. https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.3 KSA – code list (BR-KSA-CL)",
+   "pdf_page": 65
+  },
+  {
+   "id": "BR-KSA-CL-07",
+   "family": "BR-KSA-CL",
+   "severity": "warning",
+   "text": [
+    "If the Prepayment VAT Category Code(KSA-33) is 'Z', or 'E' or 'O', the Prepayment VAT exemption (or exception) reason code(KSA-41) must exist with one of the values from paragraph 11.2.4 of XML implementation standards on Tax exemption (or exception) reason code - specific to Saudi Arabia."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-DEC-01",
+   "family": "BR-KSA-DEC",
+   "severity": "error",
+   "text": [
+    "The allowance percentage values (BT-94, BT-138) must be from 0.00 to 100.00, with maximum two decimal places. Only numerals are accepted, the percentage symbol (%) is not allowed."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.2 KSA – decimals rules (BR-KSA-DEC)",
+   "pdf_page": 62
+  },
+  {
+   "id": "BR-KSA-DEC-02",
+   "family": "BR-KSA-DEC",
+   "severity": "error",
+   "text": [
+    "The VAT rates (BT-96, BT-103, BT-119, BT-152, KSA-34) must be from 0.00 to 100.00, with maximum two decimals.Only numerals are accepted, the percentage symbol (%) is not allowed."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.2 KSA – decimals rules (BR-KSA-DEC)",
+   "pdf_page": 62
+  },
+  {
+   "id": "BR-KSA-DEC-03",
+   "family": "BR-KSA-DEC",
+   "severity": "warning",
+   "text": [
+    "VAT amount at line level (KSA-11) must have a maximum two decimals."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.2 KSA – decimals rules (BR-KSA-DEC)",
+   "pdf_page": 63
+  },
+  {
+   "id": "BR-KSA-DEC-04",
+   "family": "BR-KSA-DEC",
+   "severity": "warning",
+   "text": [
+    "Amount with VAT at line level (KSA-12) must have a maximum two decimals."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.2 KSA – decimals rules (BR-KSA-DEC)",
+   "pdf_page": 63
+  },
+  {
+   "id": "BR-KSA-DEC-06",
+   "family": "BR-KSA-DEC",
+   "severity": "warning",
+   "text": [
+    "Prepayment VAT category Taxable Amount (KSA-31) and Prepayment VAT Category Tax Amount (KSA-32) must have a maximum two decimals."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.2 KSA – decimals rules (BR-KSA-DEC)",
+   "pdf_page": 63
+  },
+  {
+   "id": "BR-KSA-EN16931-01",
+   "family": "BR-KSA-EN16931",
+   "severity": "error",
+   "text": [
+    "Business process (BT-23) must be \"reporting:1.0\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 66,
+   "name_ar": "معرّف العملية (ProfileID) ليس reporting:1.0",
+   "name_en": "Business process (ProfileID) is not reporting:1.0",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-en16931-01",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-en16931-01",
+   "example_verified": [
+    "BR-KSA-EN16931-01"
+   ]
+  },
+  {
+   "id": "BR-KSA-EN16931-02",
+   "family": "BR-KSA-EN16931",
+   "severity": "error",
+   "text": [
+    "VAT accounting currency code (BT-6) must be \"SAR\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 66,
+   "name_ar": "عملة الضريبة ليست الريال",
+   "name_en": "Tax currency is not SAR",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-en16931-02",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-en16931-02",
+   "example_verified": [
+    "BR-53",
+    "BR-KSA-EN16931-02"
+   ]
+  },
+  {
+   "id": "BR-KSA-EN16931-03",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Allowance/Charge amount (BT-92, BT-99, BT-136, BT-141) must equal base amount (BT-93, BT-100, BT-137, BT-142) * percentage (BT-94, BT-101, BT-138, BT-143) / 100 if base amount and percentage exists."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 66
+  },
+  {
+   "id": "BR-KSA-EN16931-04",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Allowance/Charge base amount (BT-93, BT-100, BT-137, BT-142) must be provided when allowance/Charge percentage (BT-94, BT-101,BT-138, BT-143) is provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 66
+  },
+  {
+   "id": "BR-KSA-EN16931-05",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Allowance/Charge percentage (BT-94, BT-101, BT-138, BT-143) must be provided when the allowance/Charge base amount (BT-93, BT-100, BT-137, BT-142) is provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 66
+  },
+  {
+   "id": "BR-KSA-EN16931-06",
+   "family": "BR-KSA-EN16931",
+   "severity": "error",
+   "text": [
+    "Charge on price level (BG-29) is allowed. The value of Indicator should be ' True'."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67
+  },
+  {
+   "id": "BR-KSA-EN16931-07",
+   "family": "BR-KSA-EN16931",
+   "severity": "error",
+   "text": [
+    "Item net price (BT-146) must equal (Item Gross price (BT-148) - Allowance amount (BT-147)) when gross price is provided."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67
+  },
+  {
+   "id": "BR-KSA-EN16931-08",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Only one tax total (BG-22) with tax subtotals must be provided.Refer to Calculation of VAT."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67,
+   "name_ar": "أكثر من مجموع ضريبة فيه تفصيل",
+   "name_en": "More than one tax total with a breakdown",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-en16931-08",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-en16931-08",
+   "example_verified": [
+    "BR-CO-15",
+    "BR-KSA-EN16931-08"
+   ]
+  },
+  {
+   "id": "BR-KSA-EN16931-09",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Only one tax total (BG-22) without tax subtotals (BG-23) must be provided when tax currency code is provided ."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67
+  },
+  {
+   "id": "BR-KSA-EN16931-11",
+   "family": "BR-KSA-EN16931",
+   "severity": "warning",
+   "text": [
+    "Invoice line net amount (BT-131) must equal (Invoiced quantity (BT-129) * (Item net price (BT-146) / item price base quantity (BT-149))-) + Sum of invoice line charge amount (BT-141) - Sum of invoice line allowance amount (BT-136)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67,
+   "name_ar": "مبلغ البند لا يساوي الكمية × السعر",
+   "name_en": "Line amount does not equal quantity × price",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-en16931-11",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-en16931-11",
+   "example_verified": [
+    "BR-KSA-EN16931-11"
+   ]
+  },
+  {
+   "id": "BR-KSA-EN16931-12",
+   "family": "BR-KSA-EN16931",
+   "severity": "error",
+   "text": [
+    "Base quantity (BT-149) must be a positive number above zero."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.4 KSA – EN16931 (BR-KSA-EN16931)",
+   "pdf_page": 67
+  },
+  {
+   "id": "BR-KSA-F-01",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "A date MUST be formatted YYYY-MM-DD, in accordance to the \"Calendar date complete representation\" as specified by ISO 8601:2004, format YYYY-MM-DD."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 68
+  },
+  {
+   "id": "BR-KSA-F-02",
+   "family": "BR-KSA-F",
+   "severity": "error",
+   "text": [
+    "Allowance/Charge Indicator value MUST equal to 'false'/’True’ respectively."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 68
+  },
+  {
+   "id": "BR-KSA-F-03",
+   "family": "BR-KSA-F",
+   "severity": null,
+   "text": [
+    "Document MUST not contain empty elements."
+   ],
+   "in_sdk": false,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 68
+  },
+  {
+   "id": "BR-KSA-F-04",
+   "family": "BR-KSA-F",
+   "severity": "error",
+   "text": [
+    "All the document amounts and quantities must be positive, unless specified otherwise."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 68,
+   "name_ar": "مبلغ أو كمية بالسالب",
+   "name_en": "Negative amount or quantity",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-ksa-f-04",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-ksa-f-04",
+   "example_verified": [
+    "BR-KSA-EN16931-11",
+    "BR-KSA-F-04"
+   ]
+  },
+  {
+   "id": "BR-KSA-F-05",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Prepayment Issue Time (KSA-29) must be in the format: hh:mm:ss for time expressed in local time or hh:mm:ssZ for time expressed in UTC.(eg 19:20:30)"
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 69
+  },
+  {
+   "id": "BR-KSA-F-06",
+   "family": "BR-KSA-F",
+   "severity": null,
+   "text": [
+    "Minimum & Maximum character limits should be maintained as per data dictionary for every data field"
+   ],
+   "in_sdk": false,
+   "in_pdf": true,
+   "pdf_section": "13.3.5 KSA – formats (BR-KSA-F)",
+   "pdf_page": 69
+  },
+  {
+   "id": "BR-KSA-F-06-C1",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Invoice number field (BT-1) have not been met. The minimum limit is 1 character and the maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C10",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Seller name field (BT-27) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C11",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - Additional street field (BT-51) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C12",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Buyer name field (BT-44) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C13",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Reasons for issuance of credit / debit note field (KSA-10) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters ."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C14",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "[BR-KSA-F-06-C14]Field character limits for Payment terms field (KSA-22) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C15",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Payment account identifier field (BT-84) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C16",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for VAT exemption reason text field (BT-120) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C17",
+   "family": "BR-KSA-F",
+   "severity": "error",
+   "text": [
+    "Field character limits for Invoice line identifier field (BT-126) have not been met. The minimum limit is 1 character and the maximum limit is 6 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C18",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Invoiced quantity unit of measure field (BT-130) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C19",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Item name field (BT-153) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C2",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Invoice note field (BT-22) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C20",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Item standard identifier field (BT-157) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C21",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Item price base quantity unit code field (BT-150) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C22",
+   "family": "BR-KSA-F",
+   "severity": "error",
+   "text": [
+    "Field character limits for Billing reference ID field (BT-25) have not been met. The minimum limit is 1 character and the maximum limit is 5000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C23",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - Street field (BT-50) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C24",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - Street field (BT-50) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C25",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - City field (BT-52) have not been met. The minimum limit is 1 character and the maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C26",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - City field (BT-52) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C27",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - Province/State field (BT-54) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C28",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - District field (KSA-4) have not been met. The minimum limit is 1 character and the maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C29",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Buyer Address - District field (KSA-4) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C3",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Purchase order ID field (BT-13) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C30",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Item Buyer's identifier field (BT-156) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C31",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Item Seller's identifier field (BT-155) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C32",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Buyer name field (BT-44) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C33",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Reason for the document level charge (BT-104) have not been met. The maximum limit is 1,000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C34",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Reason for invoice line charge (BT-144) have not been met. The maximum limit is 1,000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C35",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Reason for the document level allowance (BT-97) have not been met. The maximum limit is 1,000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C36",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Reason for the invoice line allowance (BT-139) have not been met. The maximum limit is 1,000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C37",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the contact name - Buyer's contact point field (BT-56) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C38",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the contact note - Buyer's Contact Note field (KSA-35) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C39",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Prepayment VAT exemption reason text (KSA-42) have not been met. The maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C4",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Seller Address - Street field (BT-35) have not been met. The minimum limit is 1 character and the maximum limit is 1000 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C5",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for Contract ID field (BT-12) have not been met. The maximum limit is 127 characters ."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C6",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Seller Address - Additional street field (BT-36) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C7",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Seller Address - City field (BT-37) have not been met. The minimum limit is 1 character and the maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C8",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Seller Address - Province/State field (BT-39) have not been met. The maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-KSA-F-06-C9",
+   "family": "BR-KSA-F",
+   "severity": "warning",
+   "text": [
+    "Field character limits for the Seller Address - District field (KSA-3) have not been met. The minimum limit is 1 character and the maximum limit is 127 characters."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-O-01",
+   "family": "BR-O",
+   "severity": "warning",
+   "text": [
+    "An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151 or BT-95 or BT-102) is \"Not subject to VAT\" shall contain exactly at least one VAT breakdown group (BG-23) with the VAT category code (BT-118) equal to \"Not subject to VAT\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.6 Business rules - Not subject to VAT (BR-O)",
+   "pdf_page": 43
+  },
+  {
+   "id": "BR-O-08",
+   "family": "BR-O",
+   "severity": "warning",
+   "text": [
+    "In a VAT breakdown (BG-23) where the VAT category code (BT-118) is \" Not subject to VAT\" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are \"Not subject to VAT\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.6 Business rules - Not subject to VAT (BR-O)",
+   "pdf_page": 43
+  },
+  {
+   "id": "BR-O-09",
+   "family": "BR-O",
+   "severity": "error",
+   "text": [
+    "The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is \"Not subject to VAT\" shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.6 Business rules - Not subject to VAT (BR-O)",
+   "pdf_page": 43
+  },
+  {
+   "id": "BR-O-13",
+   "family": "BR-O",
+   "severity": null,
+   "text": [
+    "An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) \"Not subject to VAT\" shall not contain Document level allowances (BG-20) where Document level allowance VAT category code (BT-95) is not \"Not subject to VAT\"."
+   ],
+   "in_sdk": false,
+   "in_pdf": true,
+   "pdf_section": "13.2.6 Business rules - Not subject to VAT (BR-O)",
+   "pdf_page": 43
+  },
+  {
+   "id": "BR-S-01",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is \"Standard rated\" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with \"Standard rated\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-S-05",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "For invoice items (BG-25) in which the VAT category code of invoiced items (BT-151) is \"Standard rated\" the VAT rate of the invoiced item (BT-152) must be greater than zero."
+   ],
+   "in_sdk": true,
+   "in_pdf": false,
+   "pdf_section": null,
+   "pdf_page": null
+  },
+  {
+   "id": "BR-S-06",
+   "family": "BR-S",
+   "severity": "error",
+   "text": [
+    "In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is \"Standard rated\" the Document level allowance VAT rate (BT-96) shall be greater than zero."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.3 Business rules - VAT standard and reduced rate (BR-S)",
+   "pdf_page": 39
+  },
+  {
+   "id": "BR-S-07",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is \"Standard rated\" the Document level charge VAT rate (BT-103) shall be greater than zero."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.3 Business rules - VAT standard and reduced rate (BR-S)",
+   "pdf_page": 39
+  },
+  {
+   "id": "BR-S-08",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "In a VAT breakdown (BG-23) where the VAT category code (BT-118) is \" Standard rated\" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are \"Standard Rate\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.3 Business rules - VAT standard and reduced rate (BR-S)",
+   "pdf_page": 39,
+   "name_ar": "المبلغ الخاضع للنسبة الأساسية لا يساوي مجموع البنود",
+   "name_en": "Standard-rate taxable amount does not match the lines",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-s-08",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-s-08",
+   "example_verified": [
+    "BR-CO-17",
+    "BR-S-08",
+    "BR-S-09"
+   ]
+  },
+  {
+   "id": "BR-S-09",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is \"Standard rated\" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119) / 100), rounded to two decimals."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.3 Business rules - VAT standard and reduced rate (BR-S)",
+   "pdf_page": 39,
+   "name_ar": "ضريبة الفئة S لا تساوي المبلغ × النسبة",
+   "name_en": "Standard-rate VAT does not equal amount × rate",
+   "page_ar": "https://cashhubapp.com/zatca-errors/br-s-09",
+   "page_en": "https://cashhubapp.com/en/zatca-errors/br-s-09",
+   "example_verified": [
+    "BR-CO-14",
+    "BR-CO-15",
+    "BR-CO-17",
+    "BR-S-09"
+   ]
+  },
+  {
+   "id": "BR-S-10",
+   "family": "BR-S",
+   "severity": "warning",
+   "text": [
+    "A VAT breakdown (BG-23) with VAT Category code (BT-118) \"Standard rate\" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.3 Business rules - VAT standard and reduced rate (BR-S)",
+   "pdf_page": 40
+  },
+  {
+   "id": "BR-Z-01",
+   "family": "BR-Z",
+   "severity": "warning",
+   "text": [
+    "An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151 or BT-95 or BT-102) is \"Zero rated\" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with \"Zero rated\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 40
+  },
+  {
+   "id": "BR-Z-05",
+   "family": "BR-Z",
+   "severity": "error",
+   "text": [
+    "In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is \"Zero rated\" the Invoiced item VAT rate (BT-152) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 40
+  },
+  {
+   "id": "BR-Z-06",
+   "family": "BR-Z",
+   "severity": "error",
+   "text": [
+    "In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is \"Zero rated\" the Document level allowance VAT rate (BT-96) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 40
+  },
+  {
+   "id": "BR-Z-07",
+   "family": "BR-Z",
+   "severity": "error",
+   "text": [
+    "In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is \"Zero rated\" the Document level charge VAT rate (BT-103) shall be 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 41
+  },
+  {
+   "id": "BR-Z-08",
+   "family": "BR-Z",
+   "severity": "warning",
+   "text": [
+    "In a VAT breakdown (BG-23) where the VAT category code (BT-118) is \" Zero rated\" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are \"Zero Rated\"."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 41
+  },
+  {
+   "id": "BR-Z-09",
+   "family": "BR-Z",
+   "severity": "error",
+   "text": [
+    "The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is \"Zero rated\" shall equal 0 (zero)."
+   ],
+   "in_sdk": true,
+   "in_pdf": true,
+   "pdf_section": "13.2.4 Business rules - VAT zero rate (BR-Z)",
+   "pdf_page": 41
+  }
+ ]
+}

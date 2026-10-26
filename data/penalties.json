@@ -1,0 +1,327 @@
+{
+ "verified": "2026-10-26",
+ "einvoicing_phase1_announcement": {
+  "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/E-invoicing-Violations-Fines.aspx",
+  "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/E-invoicing-Violations-Fines.aspx",
+  "date": "2021-11-16",
+  "verbatim_ar": "مخالفة عدم إصدار وحفظ الفواتير إلكترونيًا تبدأ بغرامة مالية 5.000 ريال، في حين أن مخالفة عدم تضمين رمز الاستجابة السريعة (QR Code) في الفاتورة الضريبية المبسطة، ومخالفة عدم كتابة رقم تسجيل ضريبة القيمة المضافة للمنشأة التي قامت بعملية الشراء بالفواتير الضريبية، ومخالفة عدم إبلاغ الهيئة عن أي عطل يُعيق إصدار الفواتير الإلكترونية، تبدأ عقوبتها بإنذار المنشأة، كما أوضحت الهيئة أن مخالفة حذف أو تعديل الفواتير الإلكترونية بعد إصدارها تبدأ بغرامة مالية 10.000 ريال ... جميع الغرامات تُطبق وفقًا لنوع المخالفة وعدد مرات تكرارها",
+  "note": "الصفحة المطلوبة تذكر 4 مخالفات فقط كبدايات؛ الجدول الكامل في دليل التصنيف أدناه"
+ },
+ "classification_guide": {
+  "source": "https://zatca.gov.sa/ar/E-Invoicing/Introduction/Guidelines/Documents/E-Invoice%20VAT.pdf",
+  "edition": "الإصدار الثاني مايو 2024",
+  "note": "نص الـPDF المستخرج آليًا مشوّه، فالمبالغ والنصوص منقولة من صور الصفحات 4 إلى 13 وراجعناها بالعين صفحة صفحة في 2026-10-26.",
+  "tiers": [
+   {
+    "no": 1,
+    "group": "vat_general",
+    "description_ar": "عدم الالتزام الشخص الخاضع للضريبة بإصدار فواتير ضريبية وفق أحكام النظام واللائحة",
+    "first": "تنبيه",
+    "second_sar": 10000,
+    "third_sar": 15000,
+    "fourth_sar": 20000,
+    "fifth_sar": 30000,
+    "sixth_sar": 40000,
+    "after_sixth_sar": 50000,
+    "periodic_days": 30
+   },
+   {
+    "no": 2,
+    "group": "vat_general",
+    "description_ar": "عدم الالتزام الخاضع للضريبة بإصدار إشعار دائن أو مدين، أو تزويد العميل به، وفق أحكام النظام واللائحة",
+    "first": "تنبيه",
+    "second_sar": 5000,
+    "third_sar": 10000,
+    "fourth_sar": 15000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 3,
+    "group": "vat_general",
+    "description_ar": "عدم الالتزام الخاضع للضريبة بإدراج البيانات الواجب توافرها في الفواتير الضريبية أو الإشعارات الدائنة والمدينة بها وتطبيق الغرامة وفق كل حقل من حقول الفاتورة أو الإشعار",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 4,
+    "group": "vat_general",
+    "description_ar": "عدم الالتزام بحفظ الفواتير والسجلات والمستندات المحاسبية وفق الضوابط والأحكام المنصوص عليها وفق أحكام النظام واللائحة، وتطبيق الغرامة بشكل منفصل وفق كل حكم من الأحكام التي تمت مخالفتها",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 5,
+    "group": "vat_general",
+    "description_ar": "منع أو إعاقة موظفي الهيئة عن أداء مهامهم وواجباتهم الوظيفية",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 10
+   },
+   {
+    "no": 6,
+    "group": "vat_general",
+    "description_ar": "احتساب الضريبة المستحقة بموجب الفواتير المصدرة للمستهلك النهائي بشكل خاطئ",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 7,
+    "group": "vat_general",
+    "description_ar": "مخالفة أي حكم من أحكام النظام أو اللائحة",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 8,
+    "group": "einvoicing",
+    "description_ar": "عدم الالتزام بربط كل أنظمة الفوترة الإلكترونية التي تستخدم في إصدار الفواتير الإلكترونية أو الإشعارات الإلكترونية بأنظمة الهيئة - ابتداء من التاريخ الفعلي المحدد لوجوب الربط بأنظمة الهيئة - ما لم يكن لدى الشخص الخاضع للائحة الفوترة الإلكترونية دليل على أن عدم الربط بسبب خلل تقني في أنظمة الهيئة",
+    "first": "تنبيه",
+    "second_sar": 10000,
+    "third_sar": 15000,
+    "fourth_sar": 20000,
+    "fifth_sar": 30000,
+    "sixth_sar": 40000,
+    "after_sixth_sar": 50000,
+    "periodic_days": 30
+   },
+   {
+    "no": 9,
+    "group": "einvoicing",
+    "description_ar": "عدم الالتزام بمشاركة الفواتير الإلكترونية أو الإشعارات الإلكترونية مع الهيئة بالصيغة المطلوبة وخلال المدد المحددة لوجوب مشاركتها مع الهيئة مع عدم إبلاغ الهيئة من قبل الوسائل المحددة من قبلها عن أي حوادث أو أعطال فنية أو أمور طارئة تعوق عملية المشاركة مع أنظمة الهيئة - ابتداء من التاريخ الفعلي المحدد لوجوب الربط بأنظمة الهيئة - ما لم يكن لدى الشخص الخاضع للائحة الفوترة الإلكترونية دليل على أن عدم المشاركة بسبب خلل تقني في أنظمة الهيئة",
+    "first": "تنبيه",
+    "second_sar": 5000,
+    "third_sar": 10000,
+    "fourth_sar": 15000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 10,
+    "group": "einvoicing",
+    "description_ar": "عدم التزام الشخص الخاضع للائحة الفوترة الإلكترونية بإصدار الفواتير الإلكترونية أو الإشعارات الإلكترونية المرتبطة بها الواجب إصدارها وفق أحكام لائحة الفوترة الإلكترونية خلال المدد النظامية لإصدارها مع عدم إبلاغ الهيئة من خلال الوسائل المحددة من قبلها عن أي حوادث أو أعطال فنية أو أمور طارئة تعوق عملية إصدار الفواتير أو الإشعارات وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 5000,
+    "third_sar": 10000,
+    "fourth_sar": 15000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 11,
+    "group": "einvoicing",
+    "description_ar": "تضمين أي من الوظائف المحظورة في الحل التقني المستخدم في إصدار الفواتير والإشعارات الإلكترونية وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 5000,
+    "third_sar": 10000,
+    "fourth_sar": 15000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 12,
+    "group": "einvoicing",
+    "description_ar": "حذف الفواتير الإلكترونية أو الإشعارات الإلكترونية المرتبطة بها، أو إجراء تعديل عليها بعد إصدارها من خلال الحل التقني المستخدم في إصدارها وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 5000,
+    "third_sar": 10000,
+    "fourth_sar": 15000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 30
+   },
+   {
+    "no": 13,
+    "group": "einvoicing",
+    "description_ar": "عدم التزام الخاضع للائحة الفوترة الإلكترونية بحفظ الفواتير الإلكترونية والإشعارات الإلكترونية وفق صيغة وآلية الحفظ المنصوص عليها في لائحة الفوترة الإلكترونية والمدد الزمنية الواردة بها وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 14,
+    "group": "einvoicing",
+    "description_ar": "عدم إبلاغ الهيئة من خلال الوسائل المحددة من قبلها عن أي حوادث أو أعطال فنية أو أمور طارئة تعوق عملية إصدار الفواتير الإلكترونية أو الإشعارات الإلكترونية وفقاً للمدد الزمنية المحددة من قبل الهيئة وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 15,
+    "group": "einvoicing",
+    "description_ar": "عدم تضمين رمز الاستجابة السريعة في الفاتورة الإلكترونية أو الإشعار الإلكتروني وذلك ابتداء من تاريخ سريان لائحة الفوترة الإلكترونية",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 16,
+    "group": "einvoicing",
+    "description_ar": "عدم الالتزام بإدراج كل حقول البيانات والمتطلبات والتفاصيل الأخرى الواجب توافرها في الفواتير الإلكترونية أو الإشعارات الإلكترونية التي تتم مشاركتها مع الهيئة - ابتداء من التاريخ الفعلي المحدد لوجوب الربط بأنظمة الهيئة",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 17,
+    "group": "einvoicing",
+    "description_ar": "عدم الالتزام بمشاركة الفواتير الإلكترونية أو الإشعارات الإلكترونية مع العملاء بالصيغة المطلوبة - ابتداء من التاريخ الفعلي المحدد لوجوب الربط بأنظمة الهيئة",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   },
+   {
+    "no": 18,
+    "group": "einvoicing",
+    "description_ar": "مخالفة أي حكم من أحكام لائحة الفوترة الإلكترونية والقرارات التنفيذية ذات الصلة بالفوترة الصادرة عن الهيئة - بحسب تاريخ الإلزام المرتبط بالحكم الذي تمت مخالفته - وتطبيق الغرامة بشكل منفصل وفق كل حكم من الأحكام التي تمت مخالفتها",
+    "first": "تنبيه",
+    "second_sar": 1000,
+    "third_sar": 5000,
+    "fourth_sar": 10000,
+    "fifth_sar": 20000,
+    "sixth_sar": 30000,
+    "after_sixth_sar": 40000,
+    "periodic_days": 60
+   }
+  ],
+  "intro_ar": "تبدأ جميع المخالفات العامة عند ارتكابها بتنبيه المخالف وتوعيته بشأنها، وإعطائه مهلة زمنية مناسبة من (30) إلى (60) يومًا لمعالجتها ما عدا المخالفة الخاصة بمنع أو إعاقة موظفي الهيئة عن أداء واجباتهم ومهامهم حيث يمنح المخالف مهلة لا تزيد على عشرة أيام من تاريخ إيقاع آخر عقوبة لتصحيح المخالفة التي سيتم إيقاعها بشكل متتالٍ في حال إعادة تكرار ارتكابها من المخالف.",
+  "repeat_ar": "الحد الفاصل لاعتبار المخالفة متكررة هو عدم مضي (12) شهرًا من آخر مرة تم اكتشاف المخالفة فيها، إذا تكرر ارتكاب نفس المخالفة بعد مضي (12) شهر من قرار إيقاع عقوبة المخالفات السابقة تعد مخالفة جديدة وتبدأ بالتنبيه دون الغرامة.",
+  "pages": {
+   "intro": 4,
+   "vat_general": "4-5",
+   "einvoicing": "6-13",
+   "repeat": 13
+  }
+ },
+ "vat_general": {
+  "source_en": "https://zatca.gov.sa/en/RulesRegulations/VAT/Pages/Penalties.aspx",
+  "last_update_on_page": "2026-08-30",
+  "rows": [
+   {
+    "key": "failure_to_register",
+    "offence": "Failure to apply for VAT registration",
+    "fine": "SAR 10,000"
+   },
+   {
+    "key": "late_return",
+    "offence": "Failure to submit the Tax Return",
+    "fine": "5% - 25% of the value of the Tax that would have had to be declared"
+   },
+   {
+    "key": "late_payment",
+    "offence": "Failure to pay tax due",
+    "fine": "5% of the value of the unpaid Tax for each month or part thereof the Tax has not been paid"
+   },
+   {
+    "key": "incorrect_return",
+    "offence": "Filing incorrect tax return, amend a tax return or file any document resulting in a lower amount due",
+    "fine": "50% of the value of the difference between the calculated Tax and the Tax due"
+   },
+   {
+    "key": "unregistered_invoice",
+    "offence": "Issuance of Tax Invoice by non-registered Person",
+    "fine": "Maximum SAR 100,000 without prejudice to any stricter penalty provided in any other law"
+   },
+   {
+    "key": "records",
+    "offence": "Failure to keep Tax Invoices, books, records and accounting documents",
+    "fine": "Maximum SAR 50,000"
+   },
+   {
+    "key": "obstruction",
+    "offence": "Prevention or obstruction of ZATCA employees from performing duties",
+    "fine": "Maximum SAR 50,000"
+   },
+   {
+    "key": "other",
+    "offence": "Violation of any provision of the VAT Regulations or the VAT Law",
+    "fine": "Maximum SAR 50,000"
+   },
+   {
+    "key": "evasion_docs",
+    "offence": "Submit false documents to evade the payment or reduce VAT due or unlawfully obtain refunds for tax",
+    "fine": "At least the amount of the VAT due, up to three Times the value of the goods or service subject of the evaded tax"
+   },
+   {
+    "key": "evasion_goods",
+    "offence": "Move or attempt to move goods in or out of the Kingdom without paying the VAT due",
+    "fine": "At least the amount of the VAT due, up to three Times the value of the goods or service subject of the evaded tax"
+   }
+  ],
+  "repeat_note": "If the same violation is repeated within three years from the date of issuing the Authority's final decision of the violation, it is permissible to double the fine imposed on the offender under that decision.",
+  "article_numbers": "[مسحوب] نص نظام ضريبة القيمة المضافة لم يُجلب من zatca.gov.sa (روابط PDF المخمّنة ترجع HTML 404 والبحث لم يرجعه؛ اللائحة التنفيذية EN لا تحتوي نسب الغرامات)؛ المادة (45) مؤكدة فقط كاستثناء من المبادرة في صفحة zatca.gov.sa/en/MediaCenter/News/Pages/Cancellation-of-fines-Dec-2026.aspx"
+ },
+ "initiative": {
+  "status": "سارية حتى 2026-12-31",
+  "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/Cancellation-of-fines-Dec-2026.aspx",
+  "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/Cancellation-of-fines-Dec-2026.aspx",
+  "announced": "2026-06-29",
+  "verbatim_en": "initiative provides exemptions from penalties related to late registration across all tax laws, late payment, and late filing of returns. It also includes waivers for VAT return correction fines.",
+  "exclusions_en": "the initiative strictly excludes penalties related to tax evasion violations, fines imposed under Article 45 of the VAT Law, and fines paid prior to the effective date of this initiative. Additionally, it excludes penalties associated with any tax return that becomes due for submission to ZATCA after June 30, 2026.",
+  "period_en": "extend ... for an additional six months, starting from 1 July 2026 ... ends on 31 December 2026",
+  "einvoicing_coverage": "إعلان 2026-06-29 وملخص الدليل لا يذكران مخالفات الفوترة الإلكترونية ضمن المشمول (ذكرها دليل ديسمبر 2022 فقط: exemption_guide2_en.pdf)؛ لا تفترض شمولها [تحقق]"
+ }
+}

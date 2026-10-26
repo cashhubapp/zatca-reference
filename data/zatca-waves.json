@@ -1,0 +1,363 @@
+{
+ "name": "ZATCA e-invoicing integration waves (Phase 2)",
+ "publisher": "CashHub (cashhubapp.com)",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "checked": "2026-10-26",
+ "note": "start_date for waves announced with a start date, deadline for those announced with a latest date",
+ "waves": [
+  {
+   "wave": 1,
+   "threshold_sar": 3000000000,
+   "revenue_years": [
+    2021
+   ],
+   "start_date": "2023-01-01",
+   "deadline": null,
+   "announced": "2022-06-24",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/E-Invoicing-Phase-2-ntegration.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/E-Invoicing-Phase-2-ntegration.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 2,
+   "threshold_sar": 500000000,
+   "revenue_years": [
+    2021
+   ],
+   "start_date": "2023-07-01",
+   "deadline": null,
+   "announced": "2022-12-23",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/Phase2-Wave2-Integration-Criteria.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/Phase2-Wave2-Integration-Criteria.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 3,
+   "threshold_sar": 250000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2023-10-01",
+   "deadline": null,
+   "announced": "2023-03-24",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1023.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1023.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 4,
+   "threshold_sar": 150000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2023-11-01",
+   "deadline": null,
+   "announced": "2023-04-28",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1039.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1039.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 5,
+   "threshold_sar": 100000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2023-12-01",
+   "deadline": null,
+   "announced": "2023-05-26",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1051.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1051.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 6,
+   "threshold_sar": 70000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2024-01-01",
+   "deadline": null,
+   "announced": "2023-06-16",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1063.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1063.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 7,
+   "threshold_sar": 50000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2024-02-01",
+   "deadline": null,
+   "announced": "2023-07-28",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1084.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1084.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 8,
+   "threshold_sar": 40000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2024-03-01",
+   "deadline": null,
+   "announced": "2023-08-18",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1089.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1089.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 9,
+   "threshold_sar": 30000000,
+   "revenue_years": [
+    2021,
+    2022
+   ],
+   "start_date": "2024-06-01",
+   "deadline": null,
+   "announced": "2023-11-17",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news_1134.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news_1134.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 10,
+   "threshold_sar": 25000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2024-10-01",
+   "deadline": null,
+   "announced": "2024-03-29",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news_1220.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news_1220.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 11,
+   "threshold_sar": 15000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2024-11-01",
+   "deadline": null,
+   "announced": "2024-04-26",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news_1231.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news_1231.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 12,
+   "threshold_sar": 10000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2024-12-01",
+   "deadline": null,
+   "announced": "2024-05-24",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1243.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1243.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 13,
+   "threshold_sar": 7000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2025-01-01",
+   "deadline": null,
+   "announced": "2024-06-28",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/E-invoicing-Wave-13.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/E-invoicing-Wave-13.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 14,
+   "threshold_sar": 5000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2025-02-01",
+   "deadline": null,
+   "announced": "2024-07-26",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1268.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1268.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 15,
+   "threshold_sar": 4000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2025-03-01",
+   "deadline": null,
+   "announced": "2024-08-30",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1279.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1279.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 16,
+   "threshold_sar": 3000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": "2025-04-01",
+   "deadline": null,
+   "announced": "2024-09-27",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/E-invoicing-Wave-16.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/E-invoicing-Wave-16.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 17,
+   "threshold_sar": 2500000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": null,
+   "deadline": "2025-07-31",
+   "announced": "2024-11-01",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1300.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1300.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 18,
+   "threshold_sar": 2000000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": null,
+   "deadline": "2025-08-31",
+   "announced": "2024-11-29",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news-1312.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news-1312.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 19,
+   "threshold_sar": 1750000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": null,
+   "deadline": "2025-09-30",
+   "announced": "2024-12-27",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news_1327.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news_1327.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 20,
+   "threshold_sar": 1500000,
+   "revenue_years": [
+    2022,
+    2023
+   ],
+   "start_date": null,
+   "deadline": "2025-10-31",
+   "announced": "2025-01-31",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/e-invoicing-wave-20-2025.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/e-invoicing-wave-20-2025.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 21,
+   "threshold_sar": 1250000,
+   "revenue_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "start_date": null,
+   "deadline": "2025-11-30",
+   "announced": "2025-02-28",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/e-invoicing-wave-21-2025.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/e-invoicing-wave-21-2025.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 22,
+   "threshold_sar": 1000000,
+   "revenue_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "start_date": null,
+   "deadline": "2025-12-31",
+   "announced": "2025-03-21",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/news_1361.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/news_1361.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 23,
+   "threshold_sar": 750000,
+   "revenue_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "start_date": null,
+   "deadline": "2026-03-31",
+   "announced": "2025-06-27",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/e-invoicing-wave-23-2025.aspx",
+   "source_en": null,
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 24,
+   "threshold_sar": 375000,
+   "revenue_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "start_date": null,
+   "deadline": "2026-06-30",
+   "announced": "2025-09-26",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/final-call-fine-cancellation-2025.aspx",
+   "source_en": "https://zatca.gov.sa/en/Pages/news-1426.aspx",
+   "verified": "2026-10-26"
+  },
+  {
+   "wave": 25,
+   "threshold_sar": 187500,
+   "revenue_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "start_date": null,
+   "deadline": "2027-02-01",
+   "announced": "2026-07-24",
+   "source_ar": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/Wave25-E-invoicing.aspx",
+   "source_en": "https://zatca.gov.sa/en/MediaCenter/News/Pages/Wave25-E-invoicing.aspx",
+   "verified": "2026-10-26"
+  }
+ ]
+}

@@ -1,0 +1,627 @@
+{
+ "name": "Saudi e-invoicing glossary",
+ "publisher": "CashHub (cashhubapp.com)",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "checked": "2026-10-26",
+ "sources": {
+  "guideline": {
+   "ar": "الدليل التفصيلي للفوترة الإلكترونية، الإصدار 2، مايو 2023",
+   "en": "E-Invoicing Detailed Guideline, Version 2, May 2023",
+   "url": "https://zatca.gov.sa/en/E-Invoicing/Introduction/Guidelines/Documents/E-Invoicing_Detailed__Guideline.pdf"
+  },
+  "dd": {
+   "ar": "قاموس بيانات الفاتورة الإلكترونية، 19 مايو 2023",
+   "en": "E-Invoice Data Dictionary, 19 May 2023",
+   "url": "https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/20230519_EInvoice_Data_Dictionary%20vF.xlsx"
+  },
+  "xml": {
+   "ar": "معيار تطبيق XML للفاتورة الإلكترونية، الإصدار 1.2، 19 مايو 2023",
+   "en": "Electronic Invoice XML Implementation Standard v1.2, 19 May 2023",
+   "url": "https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/20230519_ZATCA_Electronic_Invoice_XML_Implementation_Standard_%20vF.pdf"
+  },
+  "sec": {
+   "ar": "معيار تطبيق خصائص الأمان، الإصدار 1.2، 19 مايو 2023",
+   "en": "Security Features Implementation Standard v1.2, 19 May 2023",
+   "url": "https://zatca.gov.sa/ar/E-Invoicing/SystemsDevelopers/Documents/20230519_ZATCA_Electronic_Invoice_Security_Features_Implementation_Standards_vF.pdf"
+  },
+  "devportal": {
+   "ar": "دليل بوابة المطورين، الإصدار 3، نوفمبر 2022",
+   "en": "Developer Portal Manual, Version 3, November 2022",
+   "url": "https://zatca.gov.sa/en/E-Invoicing/Introduction/Guidelines/Documents/DEVELOPER-PORTAL-MANUAL.pdf"
+  }
+ },
+ "terms": [
+  {
+   "key": "e-invoicing",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.1",
+   "ar": {
+    "term": "الفوترة الإلكترونية",
+    "definition": "تحويل إصدار الفواتير والإشعارات الورقية إلى عملية إلكترونية، تتبادل فيها الفواتير والإشعارات الدائنة والمدينة وتعالج بصيغة إلكترونية منظمة بين البائع والمشتري."
+   },
+   "en": {
+    "term": "E-invoicing",
+    "definition": "Turning paper invoices and notes into an electronic process, where invoices and credit and debit notes are exchanged and processed in a structured electronic format between seller and buyer."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#e-invoicing",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#e-invoicing"
+  },
+  {
+   "key": "standard-invoice",
+   "code": "388 / 01",
+   "source": "guideline",
+   "loc": "§2.2؛ XML §11.2.1",
+   "ar": {
+    "term": "الفاتورة الضريبية (القياسية)",
+    "definition": "فاتورة حسب المادة 53(1) من اللائحة التنفيذية لضريبة القيمة المضافة، تصدر وتحفظ بصيغة إلكترونية منظمة، وغالبها بين منشأتين (B2B). في الملف رمزها 388 والنوع الفرعي يبدأ بـ01. الفاتورة الورقية الممسوحة ضوئيًا ما تحسب إلكترونية."
+   },
+   "en": {
+    "term": "Tax invoice (standard)",
+    "definition": "An invoice under Article 53(1) of the VAT Implementing Regulations, generated and stored in a structured electronic format, mostly business to business. In the XML its code is 388 and its subtype starts with 01. A scanned paper invoice does not count as electronic."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#standard-invoice",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#standard-invoice"
+  },
+  {
+   "key": "simplified-invoice",
+   "code": "388 / 02",
+   "source": "guideline",
+   "loc": "§2.3",
+   "ar": {
+    "term": "الفاتورة الضريبية المبسطة",
+    "definition": "فاتورة حسب المادة 53(7) من اللائحة التنفيذية، تصدر غالبًا للمستهلك (B2C) وبدون بيانات المشتري. يجوز إصدارها بين منشأتين إذا كانت قيمة التوريد أقل من 1,000 ريال. نوعها الفرعي يبدأ بـ02."
+   },
+   "en": {
+    "term": "Simplified tax invoice",
+    "definition": "An invoice under Article 53(7) of the VAT Implementing Regulations, mostly issued to consumers and usually without buyer details. It may be used between businesses when the supply is under SAR 1,000. Its subtype starts with 02."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#simplified-invoice",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#simplified-invoice"
+  },
+  {
+   "key": "credit-note",
+   "code": "381",
+   "source": "guideline",
+   "loc": "§2.6؛ XML §11.2.1",
+   "ar": {
+    "term": "الإشعار الدائن",
+    "definition": "يصدره البائع ليرد مبلغًا للمشتري أو يصحح فاتورة صدرت بخطأ، ويأخذ نفس صيغة الفاتورة الأصلية. رمزه في الملف 381."
+   },
+   "en": {
+    "term": "Credit note",
+    "definition": "Issued by the seller to refund the buyer or to correct an invoice issued with an error. It follows the format of the original invoice. Its XML code is 381."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#credit-note",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#credit-note"
+  },
+  {
+   "key": "debit-note",
+   "code": "383",
+   "source": "guideline",
+   "loc": "§2.5؛ XML §11.2.1",
+   "ar": {
+    "term": "الإشعار المدين",
+    "definition": "يصدره البائع ليرفع قيمة الفاتورة الأصلية أو مبلغ ضريبتها، ويأخذ نفس صيغتها. رمزه في الملف 383."
+   },
+   "en": {
+    "term": "Debit note",
+    "definition": "Issued by the seller to increase the value of the original invoice or its VAT. It follows the format of that invoice. Its XML code is 383."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#debit-note",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#debit-note"
+  },
+  {
+   "key": "note-reason",
+   "code": "KSA-10",
+   "source": "dd",
+   "loc": "KSA-10",
+   "ar": {
+    "term": "سبب إصدار الإشعار",
+    "definition": "حقل إلزامي في الإشعار الدائن والمدين يذكر سبب إصداره. قاموس البيانات يحيل للمادة 40(1) والمادة 54(3) من اللائحة، ويحصر الحالات في 5."
+   },
+   "en": {
+    "term": "Note reason",
+    "definition": "A required field on a credit or debit note that states why it was issued. The data dictionary refers to Articles 40(1) and 54(3) of the Implementing Regulations and lists 5 cases."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#note-reason",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#note-reason"
+  },
+  {
+   "key": "billing-reference",
+   "code": "BT-25",
+   "source": "dd",
+   "loc": "BT-25",
+   "ar": {
+    "term": "مرجع الفاتورة الأصلية",
+    "definition": "الرقم التسلسلي (BT-1) للفاتورة الأصلية اللي يرتبط بها الإشعار الدائن أو المدين."
+   },
+   "en": {
+    "term": "Billing reference",
+    "definition": "The sequential number (BT-1) of the original invoice that a credit or debit note relates to."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#billing-reference",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#billing-reference"
+  },
+  {
+   "key": "prepayment",
+   "code": "386",
+   "source": "xml",
+   "loc": "§11.2.1؛ KSA-26",
+   "ar": {
+    "term": "فاتورة الدفعة المقدمة",
+    "definition": "فاتورة تصدر عند استلام مبلغ قبل التوريد، رمزها 386 (01 للضريبية و02 للمبسطة). الفاتورة النهائية تشير لها برقمها التسلسلي في الحقل KSA-26."
+   },
+   "en": {
+    "term": "Prepayment invoice",
+    "definition": "An invoice issued when money is received before the supply, code 386 (subtype 01 for tax, 02 for simplified). The final invoice points to it by its sequential number in KSA-26."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#prepayment",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#prepayment"
+  },
+  {
+   "key": "bt-113",
+   "code": "BT-113",
+   "source": "dd",
+   "loc": "BT-113",
+   "ar": {
+    "term": "المبلغ المدفوع مقدمًا",
+    "definition": "مجموع ما دفع مقدمًا شامل الضريبة. يطرح من إجمالي الفاتورة شامل الضريبة ليطلع المبلغ المستحق."
+   },
+   "en": {
+    "term": "Pre-paid amount",
+    "definition": "The total paid in advance, VAT included. It is subtracted from the invoice total with VAT to give the amount due."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#bt-113",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#bt-113"
+  },
+  {
+   "key": "ksa-31",
+   "code": "KSA-31",
+   "source": "dd",
+   "loc": "KSA-31",
+   "ar": {
+    "term": "المبلغ الخاضع للضريبة في الدفعة المقدمة",
+    "definition": "مجموع المبالغ الخاضعة للضريبة (BT-116) لفئة ضريبية معينة في فواتير الدفعة المقدمة المرتبطة."
+   },
+   "en": {
+    "term": "Prepayment VAT category taxable amount",
+    "definition": "The total VAT category taxable amount (BT-116) for one VAT category across the linked prepayment invoices."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ksa-31",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ksa-31"
+  },
+  {
+   "key": "ksa-32",
+   "code": "KSA-32",
+   "source": "dd",
+   "loc": "KSA-32",
+   "ar": {
+    "term": "مبلغ الضريبة في الدفعة المقدمة",
+    "definition": "مجموع مبالغ الضريبة (BT-117) لفئة ضريبية معينة في فواتير الدفعة المقدمة المرتبطة."
+   },
+   "en": {
+    "term": "Prepayment VAT category tax amount",
+    "definition": "The total VAT category tax amount (BT-117) for one VAT category across the linked prepayment invoices."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ksa-32",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ksa-32"
+  },
+  {
+   "key": "ksa-33",
+   "code": "KSA-33",
+   "source": "dd",
+   "loc": "KSA-33",
+   "ar": {
+    "term": "فئة الضريبة في الدفعة المقدمة",
+    "definition": "رمز فئة الضريبة (BT-118) في فاتورة الدفعة المقدمة المرتبطة."
+   },
+   "en": {
+    "term": "Prepayment VAT category code",
+    "definition": "The VAT category code (BT-118) of the linked prepayment invoice."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ksa-33",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ksa-33"
+  },
+  {
+   "key": "ksa-34",
+   "code": "KSA-34",
+   "source": "dd",
+   "loc": "KSA-34",
+   "ar": {
+    "term": "نسبة الضريبة في الدفعة المقدمة",
+    "definition": "نسبة الضريبة (BT-119) لفئة الضريبة المعينة في فاتورة الدفعة المقدمة المرتبطة."
+   },
+   "en": {
+    "term": "Prepayment VAT rate",
+    "definition": "The VAT rate (BT-119) of the given VAT category in the linked prepayment invoice."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ksa-34",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ksa-34"
+  },
+  {
+   "key": "invoice-number",
+   "code": "BT-1",
+   "source": "guideline",
+   "loc": "§2.14؛ BT-1",
+   "ar": {
+    "term": "الرقم التسلسلي للفاتورة",
+    "definition": "رقم فريد ومتسلسل يميز الفاتورة الصادرة من نظام الفوترة، حسب المادة 53 من اللائحة. اللائحة ما تحدد له صيغة، ويجوز تسلسل مستقل لكل فرع ما دامت الفاتورة مميزة وتتبع تسلسلًا."
+   },
+   "en": {
+    "term": "Invoice reference number",
+    "definition": "A unique, sequential number that identifies an invoice issued by the e-invoice solution, under Article 53. No format is set, and each branch may run its own sequence as long as each invoice is distinct and in sequence."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#invoice-number",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#invoice-number"
+  },
+  {
+   "key": "uuid",
+   "code": "KSA-1",
+   "source": "guideline",
+   "loc": "§2.11؛ KSA-1",
+   "ar": {
+    "term": "المعرّف الفريد (UUID)",
+    "definition": "رقم طوله 128 بت يولده نظام الفوترة بخوارزمية تجعل تكراره شبه مستحيل، ويحفظ داخل ملف الفاتورة. يسمى GUID في ويندوز."
+   },
+   "en": {
+    "term": "Unique identifier (UUID)",
+    "definition": "A 128-bit number the e-invoice solution generates with an algorithm that makes a repeat practically impossible, stored inside the invoice XML. Windows calls it a GUID."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#uuid",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#uuid"
+  },
+  {
+   "key": "icv",
+   "code": "KSA-16",
+   "source": "dd",
+   "loc": "KSA-16؛ BR-KSA-33، BR-KSA-34",
+   "ar": {
+    "term": "عداد الفاتورة (ICV)",
+    "definition": "عداد يزيد مع كل فاتورة يصدرها جهاز الفوترة، ويصعب التلاعب به. إلزامي في كل فاتورة وأرقام فقط."
+   },
+   "en": {
+    "term": "Invoice counter value (ICV)",
+    "definition": "A tamper-resistant counter that goes up with every invoice the unit issues. Required on every invoice, digits only."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#icv",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#icv"
+  },
+  {
+   "key": "pih",
+   "code": "KSA-13",
+   "source": "dd",
+   "loc": "KSA-13؛ BR-KSA-26",
+   "ar": {
+    "term": "هاش الفاتورة السابقة (PIH)",
+    "definition": "هاش SHA-256 بترميز base64 للفاتورة اللي قبلها، يحسب من ملفها بدون رمز QR والختم التشفيري. للفاتورة الأولى قيمة ثابتة هي هاش الرقم 0. كذا تترابط الفواتير في سلسلة."
+   },
+   "en": {
+    "term": "Previous invoice hash (PIH)",
+    "definition": "The base64 SHA-256 hash of the invoice before, computed from its XML without the QR code and the cryptographic stamp. The first invoice uses a fixed value, the hash of the character 0. This chains the invoices together."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#pih",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#pih"
+  },
+  {
+   "key": "hash",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.13",
+   "ar": {
+    "term": "الهاش (البصمة)",
+    "definition": "دالة تحول أي بيانات إلى قيمة بطول ثابت. نفس المدخل يعطي نفس الهاش دائمًا، وما يمكن استرجاع البيانات منه، فيستخدم للتأكد إن الملف ما تعدل."
+   },
+   "en": {
+    "term": "Hash",
+    "definition": "A function that maps data of any size to a fixed-size value. The same input always gives the same hash and the data cannot be recovered from it, so it shows whether a file was altered."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#hash",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#hash"
+  },
+  {
+   "key": "qr",
+   "code": "KSA-14",
+   "source": "guideline",
+   "loc": "§2.12؛ §4.1؛ KSA-14",
+   "ar": {
+    "term": "رمز الاستجابة السريعة (QR)",
+    "definition": "باركود مربع يقرأه الجوال للتحقق الأولي من الفاتورة. في المرحلة الثانية يحمل 9 وسوم بترميز TLV ثم base64، منها اسم البائع ورقمه الضريبي والإجمالي والضريبة وهاش الفاتورة."
+   },
+   "en": {
+    "term": "QR code",
+    "definition": "A square barcode a phone can read for a basic check of the invoice. In Phase 2 it carries 9 tags, TLV encoded then base64, including the seller name and VAT number, totals, VAT and the invoice hash."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#qr",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#qr"
+  },
+  {
+   "key": "tlv",
+   "code": null,
+   "source": "sec",
+   "loc": "§4.1",
+   "ar": {
+    "term": "ترميز TLV",
+    "definition": "طريقة ترتيب حقول رمز QR: بايت للوسم، ثم بايت لطول القيمة بعد ترميزها UTF-8، ثم القيمة نفسها. بعدها يرمز الكل base64. الطول يحسب بالبايت مو بعدد الحروف، والحرف العربي ياخذ أكثر من بايت."
+   },
+   "en": {
+    "term": "TLV encoding",
+    "definition": "How QR fields are laid out: one byte for the tag, one byte for the length of the UTF-8 value, then the value. The whole array is then base64 encoded. Length counts bytes, not characters, and an Arabic letter takes more than one byte."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#tlv",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#tlv"
+  },
+  {
+   "key": "cryptographic-stamp",
+   "code": "KSA-15",
+   "source": "guideline",
+   "loc": "§2.9؛ KSA-15",
+   "ar": {
+    "term": "الختم التشفيري",
+    "definition": "ختم إلكتروني ينشأ بخوارزميات تشفير، يثبت مصدر الفاتورة وإن محتواها ما تغير ويحدد هوية مصدرها. تفاصيله في معيار خصائص الأمان."
+   },
+   "en": {
+    "term": "Cryptographic stamp",
+    "definition": "An electronic stamp made with cryptographic algorithms that proves where the invoice came from, that its content did not change, and who issued it. The details are in the Security Features standard."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#cryptographic-stamp",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#cryptographic-stamp"
+  },
+  {
+   "key": "signature",
+   "code": null,
+   "source": "sec",
+   "loc": "§2.3.3؛ §1.3",
+   "ar": {
+    "term": "التوقيع الرقمي",
+    "definition": "الطريقة اللي يوضع بها الختم التشفيري على ملف XML: توقيع بصيغة XAdES بخوارزمية ECDSA، والمعيار يسمي تطبيقه «الختم»."
+   },
+   "en": {
+    "term": "Digital signature",
+    "definition": "How the cryptographic stamp is applied to the XML file: a XAdES signature using ECDSA. The standard calls applying it \"stamping\"."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#signature",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#signature"
+  },
+  {
+   "key": "timestamp",
+   "code": "BT-2 / KSA-25",
+   "source": "sec",
+   "loc": "§2.2.1 البند 13؛ BT-2، KSA-25",
+   "ar": {
+    "term": "ختم الوقت",
+    "definition": "الفاتورة تحمل تاريخ إصدارها (BT-2) ووقته (KSA-25) بصيغة hh:mm:ss، والختم التشفيري يسجل وقت التوقيع من ساعة جهاز الفوترة. تاريخ الإصدار ما يصير بعد تاريخ اليوم."
+   },
+   "en": {
+    "term": "Timestamp",
+    "definition": "The invoice carries its issue date (BT-2) and issue time (KSA-25) as hh:mm:ss, and the cryptographic stamp records the signing time from the unit's clock. The issue date cannot be later than today."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#timestamp",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#timestamp"
+  },
+  {
+   "key": "csid",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.10",
+   "ar": {
+    "term": "معرّف الختم التشفيري (CSID)",
+    "definition": "شهادة رقمية تربط جهاز الفوترة بجهة موثوقة تثبت هوية المنشأة وتميز الجهاز. كل جهاز له معرّف خاص فيه."
+   },
+   "en": {
+    "term": "Cryptographic Stamp Identifier (CSID)",
+    "definition": "A digital certificate that links an invoicing unit to a trusted party that confirms the business's identity and tells the unit apart. Each unit has its own."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#csid",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#csid"
+  },
+  {
+   "key": "ccsid",
+   "code": null,
+   "source": "devportal",
+   "loc": "§1، §2.3.10.1",
+   "ar": {
+    "term": "معرّف الامتثال (CCSID)",
+    "definition": "أول شهادة يحصل عليها الجهاز بعد إرسال طلب توقيع الشهادة (CSR). يستخدم لفحوصات الامتثال، وهو شرط قبل طلب معرّف الإنتاج."
+   },
+   "en": {
+    "term": "Compliance CSID (CCSID)",
+    "definition": "The first certificate a unit gets after it submits its certificate signing request (CSR). It is used for the compliance checks and is required before asking for the production CSID."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ccsid",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ccsid"
+  },
+  {
+   "key": "pcsid",
+   "code": null,
+   "source": "devportal",
+   "loc": "§1، §2.3.10.3",
+   "ar": {
+    "term": "معرّف الإنتاج (PCSID)",
+    "definition": "الشهادة اللي يوقع بها الجهاز فواتيره الحقيقية ويرسلها للإبلاغ أو الاعتماد. يطلب باستخدام معرّف الامتثال، ويجدد بنفس الطريقة."
+   },
+   "en": {
+    "term": "Production CSID (PCSID)",
+    "definition": "The certificate a unit signs its real invoices with and sends them for reporting or clearance. It is requested using the compliance CSID and renewed the same way."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#pcsid",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#pcsid"
+  },
+  {
+   "key": "reporting",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.16",
+   "ar": {
+    "term": "الإبلاغ",
+    "definition": "مشاركة الفواتير المبسطة وإشعاراتها، بعد ختمها تشفيريًا، مع الهيئة عبر منصة فاتورة خلال 24 ساعة من إصدارها."
+   },
+   "en": {
+    "term": "Reporting",
+    "definition": "Sharing simplified invoices and their notes, already cryptographically stamped, with ZATCA through FATOORA within 24 hours of issue."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#reporting",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#reporting"
+  },
+  {
+   "key": "clearance",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.15",
+   "ar": {
+    "term": "الاعتماد (التخليص)",
+    "definition": "تتحقق الهيئة من الفاتورة الضريبية القياسية وإشعاراتها قبل وصولها للمشتري، وتضع ختمها التشفيري على المستوفية فقط. ما ينطبق على الفاتورة المبسطة."
+   },
+   "en": {
+    "term": "Clearance",
+    "definition": "ZATCA checks a standard tax invoice and its notes before they reach the buyer, and stamps only the ones that pass. It does not apply to simplified invoices."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#clearance",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#clearance"
+  },
+  {
+   "key": "fatoora",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.8",
+   "ar": {
+    "term": "منصة فاتورة",
+    "definition": "بوابة الهيئة اللي تستقبل بيانات الفواتير والإشعارات، ومنها تسجل أجهزة الفوترة وتصدر معرّف الختم أو تجدده أو تلغيه."
+   },
+   "en": {
+    "term": "FATOORA portal",
+    "definition": "ZATCA's portal that receives invoice and note data. It is also where units are onboarded and their CSID is issued, renewed or revoked."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#fatoora",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#fatoora"
+  },
+  {
+   "key": "egs",
+   "code": null,
+   "source": "guideline",
+   "loc": "§2.7",
+   "ar": {
+    "term": "حل الفوترة الإلكترونية (EGS)",
+    "definition": "النظام المستخدم لإصدار الفواتير والإشعارات الإلكترونية، ويلزم يحقق متطلبات قرار الضوابط والمواصفات الفنية. الحل الواحد يقدر يضم أكثر من جهاز."
+   },
+   "en": {
+    "term": "E-invoice solution (EGS)",
+    "definition": "The system used to issue electronic invoices and notes. It must meet the controls and technical specifications resolution, and one solution can contain several units."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#egs",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#egs"
+  },
+  {
+   "key": "ubl",
+   "code": null,
+   "source": "xml",
+   "loc": "§1؛ §4",
+   "ar": {
+    "term": "UBL 2.1",
+    "definition": "معيار XML يحدد حقول الفاتورة وترتيبها. أول فحص على أي فاتورة: الملف سليم البنية ويتبع ترتيب UBL 2.1 وفيه عناصره الإلزامية."
+   },
+   "en": {
+    "term": "UBL 2.1",
+    "definition": "The XML standard that sets the invoice's fields and their order. The first check on any invoice is that the file is well formed, follows the UBL 2.1 order and has its mandatory elements."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#ubl",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#ubl"
+  },
+  {
+   "key": "transaction-code",
+   "code": "KSA-2",
+   "source": "dd",
+   "loc": "KSA-2؛ XML §11.2.1",
+   "ar": {
+    "term": "رمز نوع العملية",
+    "definition": "سبع خانات في الخاصية name لرمز نوع الفاتورة. أول خانتين 01 للضريبية أو 02 للمبسطة، والخمس الباقية أعلام لحالات خاصة مثل التصدير."
+   },
+   "en": {
+    "term": "Invoice transaction code",
+    "definition": "Seven digits in the name attribute of the invoice type code. The first two are 01 for tax or 02 for simplified, and the other five flag special cases such as exports."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#transaction-code",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#transaction-code"
+  },
+  {
+   "key": "vat-number",
+   "code": "BT-31 / BT-48",
+   "source": "xml",
+   "loc": "BR-KSA-40، BR-KSA-44؛ DD BT-31",
+   "ar": {
+    "term": "الرقم الضريبي",
+    "definition": "رقم تسجيل البائع (BT-31) أو المشتري (BT-48) في ضريبة القيمة المضافة، أو رقم المجموعة الضريبية. 15 رقمًا، أوله 3 وآخره 3."
+   },
+   "en": {
+    "term": "VAT registration number",
+    "definition": "The seller's (BT-31) or buyer's (BT-48) VAT number, or the VAT group number. 15 digits, starting and ending with 3."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#vat-number",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#vat-number"
+  },
+  {
+   "key": "seller-id",
+   "code": "BT-29",
+   "source": "xml",
+   "loc": "BR-KSA-08",
+   "ar": {
+    "term": "معرّف البائع",
+    "definition": "معرّف واحد للبائع غير الرقم الضريبي، ونوعه في schemeID: السجل التجاري CRN، أو رخصة البلدية MOM، أو رخصة الموارد البشرية MLS، أو رقم 700، أو رخصة الاستثمار SAG، أو OTH. لو عندك أكثر من سجل تجاري تكتب سجل الفرع."
+   },
+   "en": {
+    "term": "Seller identification",
+    "definition": "One seller ID besides the VAT number, with its type in schemeID: commercial registration CRN, municipal licence MOM, labour licence MLS, a 700 number, investment licence SAG, or OTH. With several CRs, use the branch's."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#seller-id",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#seller-id"
+  },
+  {
+   "key": "national-address",
+   "code": "BG-5",
+   "source": "dd",
+   "loc": "BT-35، KSA-17، KSA-23، KSA-3، BT-37، BT-38",
+   "ar": {
+    "term": "العنوان الوطني",
+    "definition": "عنوان البائع حسب المادة 53(5)(هـ) من اللائحة: الشارع، ورقم المبنى، والرقم الإضافي، والحي، والمدينة، والرمز البريدي."
+   },
+   "en": {
+    "term": "National address",
+    "definition": "The seller's address under Article 53(5)(e): street, building number, additional number, district, city and postal code."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#national-address",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#national-address"
+  },
+  {
+   "key": "vat-category",
+   "code": "BT-151 / BT-118",
+   "source": "xml",
+   "loc": "§11.2.4",
+   "ar": {
+    "term": "فئة الضريبة",
+    "definition": "رمز من قائمة UN/CEFACT 5305 يحدد معاملة البند: S للنسبة الأساسية، وZ للصفري، وE للمعفى، وO لغير الخاضع. كل بند وكل مجموع ضريبي لازم يحمل فئته."
+   },
+   "en": {
+    "term": "VAT category",
+    "definition": "A code from UN/CEFACT list 5305 for how an item is taxed: S standard rate, Z zero rated, E exempt, O not subject to VAT. Every line and every VAT breakdown must carry one."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#vat-category",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#vat-category"
+  },
+  {
+   "key": "exemption-code",
+   "code": "BT-121",
+   "source": "xml",
+   "loc": "§11.2.4؛ DD BT-121",
+   "ar": {
+    "term": "رمز سبب الإعفاء",
+    "definition": "رمز يبدأ بـVATEX-SA يشرح ليه البند صفري أو معفى أو غير خاضع، مثل VATEX-SA-32 لتصدير السلع. يرافقه نص السبب (BT-120)."
+   },
+   "en": {
+    "term": "Exemption reason code",
+    "definition": "A code starting VATEX-SA that says why an item is zero rated, exempt or out of scope, such as VATEX-SA-32 for export of goods. It goes with the reason text (BT-120)."
+   },
+   "url_ar": "https://cashhubapp.com/e-invoicing-glossary#exemption-code",
+   "url_en": "https://cashhubapp.com/en/e-invoicing-glossary#exemption-code"
+  }
+ ]
+}
